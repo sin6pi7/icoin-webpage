@@ -1,0 +1,15 @@
+$dark-grey: #272727;
+$orange: #f27b35;
+
+section {
+  min-height: 600px;
+  width: 100%;
+}
+
+.main-section {
+  background-color: $dark-grey;
+}
+
+.subsection {
+  background-color: $orange;
+}
