@@ -1,15 +1,24 @@
 $dark-grey: #272727;
 $orange: #f27b35;
 
-section {
-  min-height: 600px;
+html, body {
   width: 100%;
+  height: 100%;
 }
 
-.main-section {
+section {
+  min-height: 600px;
+  height: 100%;
+}
+
+.main-section, .first-section {
   background-color: $dark-grey;
 }
 
-.subsection {
+.subsection:nth-child(odd) {
   background-color: $orange;
+}
+
+.subsection:nth-child(even) {
+  background-color: white;
 }
