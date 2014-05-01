@@ -11,8 +11,13 @@ section {
   height: 100%;
 }
 
-.main-section, .first-section {
+.main-section {
   background-color: $dark-grey;
+}
+
+.first-section {
+  @extend .main-section;
+  height: 90%;
 }
 
 .subsection:nth-child(odd) {
@@ -21,4 +26,8 @@ section {
 
 .subsection:nth-child(even) {
   background-color: white;
+}
+
+header {
+  height: 10%;
 }
