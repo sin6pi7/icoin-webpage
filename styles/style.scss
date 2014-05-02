@@ -1,0 +1,65 @@
+$font: 'Open Sans';
+$light-grey: #f1f1f1;
+$dark-grey: #272727;
+$orange: #f27b35;
+$main-sections: 5;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: $font;
+}
+
+section {
+  min-height: 600px;
+  height: 100%;
+}
+
+.main-section {
+  background-color: $dark-grey;
+}
+
+.first-section {
+  background-color: $light-grey;
+  position: relative;
+}
+
+header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  margin: auto;
+  background-color: $dark-grey;
+  border-bottom: 1px solid lightgrey;
+}
+
+nav {
+  line-height: 3em;
+  margin: 0 5%;
+
+  .nav-item {
+    display: inline-block;
+    width: 98%/$main-sections;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+  a:hover, .active {
+    background-color: $orange;
+    color: $dark-grey;
+  }
+}
+
+.isStuck {
+  bottom: auto;
+}
+
+.subsection:nth-child(odd) {
+  background-color: $orange;
+}
+
+.subsection:nth-child(even) {
+  background-color: white;
+}
