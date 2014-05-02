@@ -3,6 +3,7 @@ $light-grey: #f1f1f1;
 $dark-grey: #272727;
 $orange: #f27b35;
 $main-sections: 5;
+$max-subsections: 5;
 
 html, body {
   width: 100%;
@@ -10,13 +11,23 @@ html, body {
   font-family: $font;
 }
 
+a, a:hover {
+  color: $orange;
+}
+
 section {
   position: relative;
-  min-height: 600px;
   height: 100%;
-  width: 100%;
-  padding: 2em 10% 0;
-  overflow: hidden;
+}
+
+.vcenter {
+  float:none;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.first-section {
+  background-color: white;
 }
 
 .main-section {
@@ -31,23 +42,6 @@ section {
   }
 }
 
-.centering-wrapper {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 70%;
-  width: 80%;
-  margin: auto;
-}
-
-.logo-wrapper, .details-wrapper {
-  float: left;
-  min-width: 100px;
-  width: 50%;
-}
-
 .logo-wrapper {
   text-align: center;
 }
@@ -55,6 +49,10 @@ section {
 .logo-big {
   max-height: 50%;
   max-width: 100%;
+}
+
+.fa-8x {
+  font-size: 8em;
 }
 
 header {
@@ -90,6 +88,28 @@ nav {
   a:hover, .active {
     background-color: $orange;
     color: $dark-grey;
+  }
+}
+
+.data-vertical-line {
+  margin-left: 20px;
+  height: 30px;
+  width: 1px;
+  background-color: white;
+}
+
+.subsections-tree-node {
+
+  .data-circle {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 36px;
+    font-size: 0.8em;
+    margin-right: 5px;
   }
 }
 
