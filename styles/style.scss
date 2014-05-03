@@ -75,6 +75,13 @@ section {
   position: relative;
   min-height: 100%;
 
+  .section-title {
+    margin-bottom: 0.8em;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+  }
+
   article {
     text-align: justify;
   }
@@ -87,13 +94,6 @@ section {
 .main-section {
   background-color: $dark-grey;
   color: white;
-
-  .main-section-title {
-    margin-bottom: 0.8em;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 600;
-  }
 }
 
 .logo-wrapper {
@@ -119,7 +119,6 @@ section {
   }
 }
 
-
 .subsections-tree-node {
 
   .data-circle {
@@ -132,6 +131,16 @@ section {
     line-height: 36px;
     font-size: 0.8em;
     margin-right: 5px;
+  }
+}
+
+.subsection {
+
+  text-align: center;
+
+  .video {
+    min-width: 100%;
+    min-height: 45%;
   }
 }
 
