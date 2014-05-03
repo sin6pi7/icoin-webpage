@@ -5,19 +5,14 @@ $orange: #f27b35;
 $main-sections: 5;
 $max-subsections: 5;
 
-html, body {
-  width: 100%;
-  height: 100%;
-  font-family: $font;
+/* Helper classes */
+
+.isStuck {
+  bottom: auto;
 }
 
-a, a:hover {
-  color: $orange;
-}
-
-section {
-  position: relative;
-  height: 100%;
+.center-auto {
+  margin: 50px auto;
 }
 
 .vcenter {
@@ -26,34 +21,7 @@ section {
   vertical-align:middle;
 }
 
-.first-section {
-  background-color: white;
-}
-
-.main-section {
-  background-color: $dark-grey;
-  color: white;
-
-  .main-section-title {
-    margin-bottom: 0.8em;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 600;
-  }
-}
-
-.logo-wrapper {
-  text-align: center;
-}
-
-.logo-big {
-  max-height: 50%;
-  max-width: 100%;
-}
-
-.fa-8x {
-  font-size: 8em;
-}
+/* Navbar */
 
 header {
   position: absolute;
@@ -91,12 +59,66 @@ nav {
   }
 }
 
+/* Body */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: $font;
+}
+
+a, a:hover {
+  color: $orange;
+}
+
+section {
+  position: relative;
+  min-height: 100%;
+
+  article {
+    text-align: justify;
+  }
+}
+
+.first-section {
+  background-color: white;
+}
+
+.main-section {
+  background-color: $dark-grey;
+  color: white;
+
+  .main-section-title {
+    margin-bottom: 0.8em;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+  }
+}
+
+.logo-wrapper {
+  text-align: center;
+}
+
+.logo-big {
+  max-height: 100%;
+  max-width: 60%;
+}
+
 .data-vertical-line {
   margin-left: 20px;
   height: 30px;
-  width: 1px;
-  background-color: white;
+  border-left: 1px solid white;
 }
+
+.not-active, .not-active .data-circle {
+  border-style: dotted !important;
+
+  a {
+    padding: 0;
+  }
+}
+
 
 .subsections-tree-node {
 
@@ -113,14 +135,12 @@ nav {
   }
 }
 
-.isStuck {
-  bottom: auto;
-}
-
 .subsection:nth-child(odd) {
   background-color: $orange;
+  color: white;
 }
 
 .subsection:nth-child(even) {
   background-color: white;
+  color: $orange;
 }

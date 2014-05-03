@@ -16,21 +16,12 @@
 
     <!-- scripts -->
     <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <!-- minify in production -->
     <script src="scripts/stickUp.js"></script>
     <script src="scripts/script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">iCoin</div>
-            <a href="#home" class="nav-item">Home</a>
-            <a href="#sekcja2" class="nav-item">Nasza działalność</a>
-            <a href="#sekcja3" class="nav-item">Study groups</a>
-            <a href="#sekcja4" class="nav-item">Ciekawi ludzie</a>
-            <a href="#sekcja5" class="nav-item">Kontakt</a>
-        </nav>
-    </header>
 
     <section id="home" class="first-section container-fluid">
         <div class="container center-auto">
@@ -54,7 +45,18 @@
         </div>
     </section>
 
-    <span id="sekcja2" class="sections-wrapper">
+    <header>
+        <nav>
+            <div class="logo">iCoin</div>
+            <a href="#home" class="nav-item">Home</a>
+            <a href="#our-activity" class="nav-item">Nasza działalność</a>
+            <a href="#study-groups" class="nav-item">Study groups</a>
+            <a href="#interesting-people" class="nav-item">Ciekawi ludzie</a>
+            <a href="#contact" class="nav-item">Kontakt</a>
+        </nav>
+    </header>
+
+    <span id="our-activity" class="sections-wrapper">
         <section class="main-section container-fluid">
             <div class="container center-auto">
                 <h1 class="main-section-title">NASZA DZIAŁALNOŚĆ</h1>
@@ -63,32 +65,22 @@
                         <div class="data-vertical-line"></div>
                         <div class="subsections-tree-node">
                             <div class="data-circle">23 III</div>
-                            <a href="#subsekcja1">subsekcja1</a>
+                            <a href="#subsection1">subsekcja1</a>
                         </div>
                         <div class="data-vertical-line"></div>
                         <div class="subsections-tree-node">
                             <div class="data-circle">23 III</div>
-                            <a href="#subsekcja2">subsekcja2</a>
+                            <a href="#subsection2">subsekcja2</a>
                         </div>
-                        <div class="data-vertical-line"></div>
-                        <div class="subsections-tree-node">
+                        <div class="data-vertical-line not-active"></div>
+                        <div class="subsections-tree-node not-active">
                             <div class="data-circle">31 XII</div>
-                            <a href="#subsekcja3">subsekcja3</a>
+                            <a class="btn disabled" href="#subsection3">subsekcja3</a>
                         </div>
-                        <div class="data-vertical-line"></div>
-                        <div class="subsections-tree-node">
+                        <div class="data-vertical-line not-active"></div>
+                        <div class="subsections-tree-node not-active">
                             <div class="data-circle">31 XII</div>
-                            <a href="#subsekcja4">subsekcja4</a>
-                        </div>
-                        <div class="data-vertical-line dotted"></div>
-                        <div class="subsections-tree-node dotted">
-                            <div class="data-circle">31 XII</div>
-                            <a href="#subsekcja5">subsekcja5</a>
-                        </div>
-                        <div class="data-vertical-line dotted"></div>
-                        <div class="subsections-tree-node dotted">
-                            <div class="data-circle">31 XII</div>
-                            <a href="#subsekcja5">subsekcja5</a>
+                            <a class="btn disabled" href="#subsection4">subsekcja4</a>
                         </div>
                     </div>
                     <div class="logo-wrapper col-md-4">
@@ -108,10 +100,10 @@
                 </div>
             </div>
         </section>
-        <section class="subsection"></section>
-        <section class="subsection"></section>
+        <section id="subsection1" class="subsection"></section>
+        <section id="subsection2" class="subsection"></section>
     </span>
-    <span id="sekcja3" class="sections-wrapper">
+    <span id="study-groups" class="sections-wrapper">
         <section class="main-section container-fluid">
             <div class="container center-auto">
                 <h1 class="main-section-title">STUDY GROUPS</h1>
@@ -168,7 +160,7 @@
         <section class="subsection"></section>
         <section class="subsection"></section>
     </span>
-    <span id="sekcja4" class="sections-wrapper">
+    <span id="interesting-people" class="sections-wrapper">
         <section class="main-section container-fluid">
             <div class="container center-auto">
                 <h1 class="main-section-title">CIEKAWI LUDZIE</h1>
@@ -225,7 +217,7 @@
         <section class="subsection"></section>
         <section class="subsection"></section>
     </span>
-    <span id="sekcja5" class="sections-wrapper">
+    <span id="contact" class="sections-wrapper">
         <section class="main-section container-fluid">
            <div class="container center-auto">
                <h1 class="main-section-title">KONTAKT</h1>
