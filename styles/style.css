@@ -1,0 +1,108 @@
+/* Helper classes */
+.isStuck {
+  bottom: auto; }
+
+.center-auto {
+  margin: 50px auto; }
+
+.vcenter {
+  float: none;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* Navbar */
+header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: auto;
+  background-color: #272727;
+  z-index: 99999; }
+
+nav {
+  height: 3em;
+  line-height: 3em;
+  margin: 0 5%; }
+  nav .nav-item, nav .logo {
+    float: left;
+    width: 16.33333%;
+    text-decoration: none;
+    color: white;
+    text-align: center; }
+  nav .logo {
+    font-size: 2em;
+    font-weight: 600; }
+  nav a:hover, nav .active {
+    background-color: #f27b35;
+    color: #272727; }
+
+/* Body */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Open Sans"; }
+
+a, a:hover {
+  color: #f27b35; }
+
+section {
+  position: relative;
+  min-height: 100%; }
+  section .section-title {
+    margin-bottom: 0.8em;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600; }
+  section article {
+    text-align: justify; }
+
+.first-section {
+  background-color: white; }
+
+.main-section {
+  background-color: #272727;
+  color: white; }
+
+.logo-wrapper {
+  text-align: center; }
+
+.logo-big {
+  max-height: 100%;
+  max-width: 60%; }
+
+.data-vertical-line {
+  margin-left: 20px;
+  height: 30px;
+  border-left: 1px solid white; }
+
+.not-active, .not-active .data-circle {
+  border-style: dotted !important; }
+  .not-active a, .not-active .data-circle a {
+    padding: 0; }
+
+.subsections-tree-node .data-circle {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 36px;
+  font-size: 0.8em;
+  margin-right: 5px; }
+
+.subsection {
+  text-align: center; }
+  .subsection .video {
+    min-width: 100%;
+    min-height: 45%; }
+
+.subsection:nth-child(odd) {
+  background-color: #f27b35;
+  color: white; }
+
+.subsection:nth-child(even) {
+  background-color: white;
+  color: #f27b35; }
