@@ -33,7 +33,12 @@ nav {
     text-align: center; }
   nav .logo {
     font-size: 2em;
-    font-weight: 600; }
+    font-weight: 600;
+    -webkit-transition: font-size 0.2s;
+    /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.2s; }
+  nav .logo:hover {
+    font-size: 2.17em; }
   nav a:hover, nav .active {
     background-color: #f27b35;
     color: #272727; }
@@ -68,8 +73,10 @@ section {
 .contact-section {
   background: url("/icoin-webpage/images/d17.jpg") no-repeat;
   background-size: cover; }
-  .contact-section .contact-row, .contact-section .contact-title {
+  .contact-section .contact-row, .contact-section .contact-title, .contact-section .like-finance-title {
     text-align: center; }
+  .contact-section .like-finance-title {
+    margin-bottom: 20px; }
 
 .logo-wrapper {
   text-align: center; }
@@ -101,10 +108,14 @@ section {
 
 .subsection {
   text-align: center; }
-  .subsection .video {
-    min-width: 100%;
-    min-height: 45%;
-    height: 360px; }
+
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 10px; }
+
+.video-wrapper {
+  height: 320px; }
 
 .subsection:nth-child(odd) {
   background-color: #f27b35;

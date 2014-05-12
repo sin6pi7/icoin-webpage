@@ -24,20 +24,16 @@ function($) {
                     $(this).css('top', top);
                 }
             });
-            $('video-wrapper').each(function(){
-
-            })
         });
 
         $('.subsection-anchor').on('click', function (e) {
             e.preventDefault();
             var subsectionIndex = ($(this).parent().index() + 1)/2;
-            console.log(subsectionIndex);
             var subsection = $(this).closest('.main-section').siblings('.subsection')[subsectionIndex-1];
             $(subsection).scrollTo();
         });
 
-        $('.nav-item').on('click', function (e) {
+        $('.nav-item, .logo-anchor').on('click', function (e) {
             e.preventDefault();
             $($(this).attr('href')).scrollTo();
         })

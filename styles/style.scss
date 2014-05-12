@@ -51,6 +51,12 @@ nav {
     @extend .nav-item;
     font-size: 2em;
     font-weight: 600;
+    -webkit-transition: font-size 0.2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 0.2s;
+  }
+
+  .logo:hover {
+    font-size: 2.17em;
   }
 
   a:hover, .active {
@@ -103,6 +109,11 @@ section {
   .contact-row, .contact-title {
     text-align: center;
   }
+
+  .like-finance-title {
+    @extend .contact-title;
+    margin-bottom: 20px;
+  }
 }
 
 .logo-wrapper {
@@ -144,14 +155,17 @@ section {
 }
 
 .subsection {
-
   text-align: center;
+}
 
-  .video {
-    min-width: 100%;
-    min-height: 45%;
-    height: 360px;
-  }
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 10px;
+}
+
+.video-wrapper {
+  height: 320px;
 }
 
 .subsection:nth-child(odd) {
