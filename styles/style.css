@@ -65,9 +65,11 @@ section {
   background-color: #272727;
   color: white; }
 
-#contact {
-  background: url("#/images/d17.jpg") no-repeat;
+.contact-section {
+  background: url("/icoin-webpage/images/d17.jpg") no-repeat;
   background-size: cover; }
+  .contact-section .contact-row, .contact-section .contact-title {
+    text-align: center; }
 
 .logo-wrapper {
   text-align: center; }
@@ -101,7 +103,8 @@ section {
   text-align: center; }
   .subsection .video {
     min-width: 100%;
-    min-height: 45%; }
+    min-height: 45%;
+    height: 360px; }
 
 .subsection:nth-child(odd) {
   background-color: #f27b35;

@@ -24,6 +24,9 @@ function($) {
                     $(this).css('top', top);
                 }
             });
+            $('video-wrapper').each(function(){
+
+            })
         });
 
         $('.subsection-anchor').on('click', function (e) {
