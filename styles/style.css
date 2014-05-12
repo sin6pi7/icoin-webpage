@@ -25,19 +25,19 @@ nav {
   height: 3em;
   line-height: 3em;
   margin: 0 5%; }
-  nav .nav-item, nav .logo {
+  nav .nav-item, nav .logo-nav-item {
     float: left;
     width: 16.33333%;
     text-decoration: none;
     color: white;
     text-align: center; }
-  nav .logo {
+  nav .logo-nav-item {
     font-size: 2em;
     font-weight: 600;
     -webkit-transition: font-size 0.2s;
     /* For Safari 3.1 to 6.0 */
     transition: font-size 0.2s; }
-  nav .logo:hover {
+  nav .logo-nav-item:hover {
     font-size: 2.17em; }
   nav a:hover, nav .active {
     background-color: #f27b35;
