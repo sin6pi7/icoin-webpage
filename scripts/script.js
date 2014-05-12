@@ -1,4 +1,6 @@
-jQuery(function($) {
+jQuery(
+function($) {
+
     $(document).ready(function () {
 
         $('header').stickUp({
@@ -37,13 +39,4 @@ jQuery(function($) {
             $($(this).attr('href')).scrollTo();
         })
     });
-
-    (function($) {
-        $.fn.scrollTo = function() {
-            $('html, body').animate({
-                scrollTop: $(this).offset().top + 'px'
-            }, 'fast');
-            return this;
-        }
-    })(jQuery);
 });
