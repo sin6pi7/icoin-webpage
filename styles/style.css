@@ -65,6 +65,13 @@ section {
 
 .first-section {
   background-color: white; }
+  .first-section .home-header {
+    font-size: 1.1em; }
+    .first-section .home-header .logo-img {
+      max-height: 60px;
+      height: 100%; }
+  .first-section .mission {
+    background-color: white; }
 
 .main-section {
   background-color: #272727;
