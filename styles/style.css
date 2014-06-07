@@ -21,16 +21,33 @@ header {
   background-color: #272727;
   z-index: 99999; }
 
+.navbar.navbar-default {
+  background-color: #272727;
+  border: none;
+  margin-bottom: 0; }
+  .navbar.navbar-default a.navbar-brand {
+    color: white; }
+  @media (min-width: 768px) {
+    .navbar.navbar-default .navbar-nav {
+      width: 83.33333%; } }
+  @media (min-width: 768px) {
+    .navbar.navbar-default .navbar-nav li {
+      width: 20%; } }
+  @media (min-width: 768px) {
+    .navbar.navbar-default .navbar-header {
+      width: 16.66667%; } }
+  .navbar.navbar-default a.nav-item, .navbar.navbar-default nav a.logo-nav-item, nav .navbar.navbar-default a.logo-nav-item {
+    text-decoration: none;
+    color: white;
+    text-align: center; }
+  .navbar.navbar-default a.nav-item:hover, .navbar.navbar-default nav a.logo-nav-item:hover, nav .navbar.navbar-default a.logo-nav-item:hover, .navbar.navbar-default a.active {
+    background-color: #f27b35;
+    color: #272727; }
+
 nav {
   height: 3em;
   line-height: 3em;
   margin: 0 5%; }
-  nav .nav-item, nav .logo-nav-item {
-    float: left;
-    width: 16.33333%;
-    text-decoration: none;
-    color: white;
-    text-align: center; }
   nav .logo-nav-item {
     font-size: 2em;
     font-weight: 600;

@@ -34,18 +34,52 @@ header {
   z-index: 99999;
 }
 
+.navbar.navbar-default {
+
+  background-color: $dark-grey;
+  border: none;
+  margin-bottom: 0;
+
+  a.navbar-brand {
+    color: white;
+  }
+
+  .navbar-nav {
+    @media (min-width: 768px) {
+      width: 100% - 100%/($main-sections + 1);
+    }
+
+    li {
+      @media (min-width: 768px) {
+        width: 100%/$main-sections;
+      }
+    }
+  }
+
+  .navbar-header {
+      @media (min-width: 768px) {
+        width: 100%/($main-sections + 1);
+      }
+  }
+
+  a.nav-item {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+  }
+
+  a.nav-item:hover, a.active {
+    background-color: $orange;
+    color: $dark-grey;
+  }
+
+}
+
 nav {
   height: 3em;
   line-height: 3em;
   margin: 0 5%;
 
-  .nav-item {
-    float: left;
-    width: 98%/($main-sections + 1);
-    text-decoration: none;
-    color: white;
-    text-align: center;
-  }
 
   .logo-nav-item {
     @extend .nav-item;
