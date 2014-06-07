@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head lang="en">
+    <link rel="stylesheet" type="text/css" href="styles/style.scss"/>
     <meta charset="UTF-8">
     <title>iCoin - fuck bitches get money</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,13 +14,6 @@
     <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="fonts/font-awesome-4.0.3/css/font-awesome.min.css"/>
-
-    <!-- scripts -->
-    <script src="scripts/jquery-1.11.0.min.js"></script>
-    <!-- minify in production -->
-    <script src="scripts/stickUp.js"></script>
-    <script src="scripts/scrollTo.js"></script>
-    <script src="scripts/script.js"></script>
 </head>
 <body>
 
@@ -55,6 +49,29 @@
             <a href="#contact" class="nav-item">Kontakt</a>
         </nav>
     </header>
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-container container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">iCoin</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav-item" href="#home">Home</a></li>
+                    <li><a class="nav-item" href="#our-activity">Nasza działalność</a></li>
+                    <li><a class="nav-item" href="#study-groups">Study groups</a></li>
+                    <li><a class="nav-item" href="#interesting-people">Ciekawi ludzie</a></li>
+                    <li><a class="nav-item" href="#contact">Kontakt</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </div>
 
     <!-- OUR ACTIVITY -->
         <div id="our-activity" class="section main-section container-fluid">
@@ -141,7 +158,7 @@
         </div>
     <!--OUR ACTIVITY end -->
     <!-- STUDY GROUPS -->
-         <div class="section main-section container-fluid">
+         <div id="study-groups" class="section main-section container-fluid">
              <div class="container center-auto">
                  <h1 class="section-title">STUDY GROUPS</h1>
                  <div class="row">
@@ -246,7 +263,7 @@
         </div>
     <!-- STUDY GROUPS end-->
     <!-- INTERESTING PEOPLE -->
-         <div class="section main-section container-fluid">
+         <div id="interesting-people" class="section main-section container-fluid">
              <div class="container center-auto">
                  <h1 class="section-title">CIEKAWI LUDZIE</h1>
                  <div class="row">
@@ -351,7 +368,7 @@
         </div>
     <!-- INTERESTING PEOPLE end -->
     <!-- CONTACT -->
-        <div class="section main-section container-fluid contact-section">
+        <div id="contact" class="section main-section container-fluid contact-section">
             <div class="container center-auto">
                 <h1 class="section-title">KONTAKT</h1>
                 <h1 class="like-finance-title">Lubisz świat finansów?</h1>
@@ -382,5 +399,11 @@
             </div>
         </div>
     <!-- CONTACT end -->
+
+
+    <!-- scripts -->
+    <script src="scripts/jquery-1.11.0.min.js"></script>
+    <script src="scripts/scrollTo.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

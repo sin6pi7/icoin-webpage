@@ -124,3 +124,6 @@ a, a:hover {
 .subsection:nth-child(even) {
   background-color: white;
   color: #f27b35; }
+
+.navbar-container {
+  padding: 0 5%; }

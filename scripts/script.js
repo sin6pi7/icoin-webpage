@@ -2,19 +2,6 @@ jQuery(
 function($) {
 
     $(document).ready(function () {
-
-        $('header').stickUp({
-            parts: {
-                0: 'home',
-                1: 'our-activity',
-                2: 'study-groups',
-                3: 'interesting-people',
-                4: 'contact'
-            },
-            itemClass: 'nav-item',
-            itemHover: 'active'
-        });
-
         $('.logo-big').load(function (){
             $('.center-auto').each(function(){
                 var parent_height = $(this).parent().height();
