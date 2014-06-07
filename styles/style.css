@@ -22,27 +22,34 @@ header {
   z-index: 99999; }
 
 .navbar.navbar-default {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: #272727;
   border: none;
   margin-bottom: 0; }
-  .navbar.navbar-default a.navbar-brand {
-    color: white; }
-  @media (min-width: 768px) {
-    .navbar.navbar-default .navbar-nav {
-      width: 83.33333%; } }
-  @media (min-width: 768px) {
-    .navbar.navbar-default .navbar-nav li {
-      width: 20%; } }
-  @media (min-width: 768px) {
-    .navbar.navbar-default .navbar-header {
-      width: 16.66667%; } }
-  .navbar.navbar-default a.nav-item, .navbar.navbar-default nav a.logo-nav-item, nav .navbar.navbar-default a.logo-nav-item {
-    text-decoration: none;
-    color: white;
-    text-align: center; }
-  .navbar.navbar-default a.nav-item:hover, .navbar.navbar-default nav a.logo-nav-item:hover, nav .navbar.navbar-default a.logo-nav-item:hover, .navbar.navbar-default a.active {
-    background-color: #f27b35;
-    color: #272727; }
+  .navbar.navbar-default .navbar-container {
+    padding: 0 5%; }
+    .navbar.navbar-default .navbar-container a.navbar-brand {
+      color: white;
+      font-size: 2em;
+      font-weight: 600; }
+    @media (min-width: 768px) {
+      .navbar.navbar-default .navbar-container .navbar-nav {
+        width: 83.33333%; } }
+    @media (min-width: 768px) {
+      .navbar.navbar-default .navbar-container .navbar-nav li {
+        width: 20%; } }
+    @media (min-width: 768px) {
+      .navbar.navbar-default .navbar-container .navbar-header {
+        width: 16.66667%; } }
+    .navbar.navbar-default .navbar-container a.nav-item, .navbar.navbar-default .navbar-container nav a.logo-nav-item, nav .navbar.navbar-default .navbar-container a.logo-nav-item {
+      text-decoration: none;
+      color: white;
+      text-align: center; }
+    .navbar.navbar-default .navbar-container a.nav-item:hover, .navbar.navbar-default .navbar-container nav a.logo-nav-item:hover, nav .navbar.navbar-default .navbar-container a.logo-nav-item:hover, .navbar.navbar-default .navbar-container a.active {
+      background-color: #f27b35;
+      color: #272727; }
 
 nav {
   height: 3em;
@@ -141,6 +148,3 @@ a, a:hover {
 .subsection:nth-child(even) {
   background-color: white;
   color: #f27b35; }
-
-.navbar-container {
-  padding: 0 5%; }

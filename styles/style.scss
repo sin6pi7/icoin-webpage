@@ -36,43 +36,51 @@ header {
 
 .navbar.navbar-default {
 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   background-color: $dark-grey;
   border: none;
   margin-bottom: 0;
 
-  a.navbar-brand {
-    color: white;
-  }
+  .navbar-container {
+    padding: 0 5%;
 
-  .navbar-nav {
-    @media (min-width: 768px) {
-      width: 100% - 100%/($main-sections + 1);
+    a.navbar-brand {
+      color: white;
+      font-size: 2em;
+      font-weight: 600;
     }
 
-    li {
+    .navbar-nav {
       @media (min-width: 768px) {
-        width: 100%/$main-sections;
+        width: 100% - 100%/($main-sections + 1);
+      }
+
+      li {
+        @media (min-width: 768px) {
+          width: 100%/$main-sections;
+        }
       }
     }
-  }
 
-  .navbar-header {
-      @media (min-width: 768px) {
-        width: 100%/($main-sections + 1);
-      }
-  }
+    .navbar-header {
+        @media (min-width: 768px) {
+          width: 100%/($main-sections + 1);
+        }
+    }
 
-  a.nav-item {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-  }
+    a.nav-item {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+    }
 
-  a.nav-item:hover, a.active {
-    background-color: $orange;
-    color: $dark-grey;
+    a.nav-item:hover, a.active {
+      background-color: $orange;
+      color: $dark-grey;
+    }
   }
-
 }
 
 nav {
@@ -210,8 +218,4 @@ a, a:hover {
 .subsection:nth-child(even) {
   background-color: white;
   color: $orange;
-}
-
-.navbar-container {
-  padding: 0 5%;
 }
