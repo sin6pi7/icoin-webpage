@@ -52,15 +52,15 @@ html, body {
 a, a:hover {
   color: #f27b35; }
 
-section {
+.section {
   position: relative;
   min-height: 100%; }
-  section .section-title {
+  .section .section-title {
     margin-bottom: 0.8em;
     text-align: center;
     font-size: 3em;
     font-weight: 600; }
-  section article {
+  .section article {
     text-align: justify; }
 
 .first-section {
