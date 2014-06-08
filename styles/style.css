@@ -11,23 +11,19 @@
   vertical-align: middle; }
 
 /* Navbar */
-header {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-width: 960px;
-  height: auto;
-  margin: auto;
-  background-color: #272727;
-  z-index: 99999; }
-
 .navbar.navbar-default {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   background-color: #272727;
   border: none;
   margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .navbar.navbar-default {
+      position: absolute;
+      bottom: 0; } }
+  @media (max-width: 768px) {
+    .navbar.navbar-default {
+      position: fixed;
+      top: 0; } }
   .navbar.navbar-default .navbar-container {
     padding: 0 5%; }
     .navbar.navbar-default .navbar-container a.navbar-brand {
@@ -43,29 +39,13 @@ header {
     @media (min-width: 768px) {
       .navbar.navbar-default .navbar-container .navbar-header {
         width: 16.66667%; } }
-    .navbar.navbar-default .navbar-container a.nav-item, .navbar.navbar-default .navbar-container nav a.logo-nav-item, nav .navbar.navbar-default .navbar-container a.logo-nav-item {
+    .navbar.navbar-default .navbar-container a.nav-item {
       text-decoration: none;
       color: white;
       text-align: center; }
-    .navbar.navbar-default .navbar-container a.nav-item:hover, .navbar.navbar-default .navbar-container nav a.logo-nav-item:hover, nav .navbar.navbar-default .navbar-container a.logo-nav-item:hover, .navbar.navbar-default .navbar-container a.active {
+    .navbar.navbar-default .navbar-container a.nav-item:hover, .navbar.navbar-default .navbar-container a.active {
       background-color: #f27b35;
       color: #272727; }
-
-nav {
-  height: 3em;
-  line-height: 3em;
-  margin: 0 5%; }
-  nav .logo-nav-item {
-    font-size: 2em;
-    font-weight: 600;
-    -webkit-transition: font-size 0.2s;
-    /* For Safari 3.1 to 6.0 */
-    transition: font-size 0.2s; }
-  nav .logo-nav-item:hover {
-    font-size: 2.17em; }
-  nav a:hover, nav .active {
-    background-color: #f27b35;
-    color: #272727; }
 
 /* Body */
 html, body {
@@ -133,14 +113,6 @@ a, a:hover {
 .subsection {
   text-align: center; }
 
-.video {
-  min-width: 100%;
-  min-height: 100%;
-  margin-top: 10px; }
-
-.video-wrapper {
-  height: 320px; }
-
 .subsection:nth-child(odd) {
   background-color: #f27b35;
   color: white; }
@@ -148,3 +120,11 @@ a, a:hover {
 .subsection:nth-child(even) {
   background-color: white;
   color: #f27b35; }
+
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 10px; }
+
+.video-wrapper {
+  height: 320px; }

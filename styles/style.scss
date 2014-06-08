@@ -23,22 +23,19 @@ $max-subsections: 5;
 
 /* Navbar */
 
-header {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  min-width: 960px;
-  height: auto;
-  margin: auto;
-  background-color: $dark-grey;
-  z-index: 99999;
-}
-
 .navbar.navbar-default {
 
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+  }
+
+    width: 100%;
   background-color: $dark-grey;
   border: none;
   margin-bottom: 0;
@@ -80,30 +77,6 @@ header {
       background-color: $orange;
       color: $dark-grey;
     }
-  }
-}
-
-nav {
-  height: 3em;
-  line-height: 3em;
-  margin: 0 5%;
-
-
-  .logo-nav-item {
-    @extend .nav-item;
-    font-size: 2em;
-    font-weight: 600;
-    -webkit-transition: font-size 0.2s; /* For Safari 3.1 to 6.0 */
-    transition: font-size 0.2s;
-  }
-
-  .logo-nav-item:hover {
-    font-size: 2.17em;
-  }
-
-  a:hover, .active {
-    background-color: $orange;
-    color: $dark-grey;
   }
 }
 
@@ -200,16 +173,6 @@ a, a:hover {
   text-align: center;
 }
 
-.video {
-  min-width: 100%;
-  min-height: 100%;
-  margin-top: 10px;
-}
-
-.video-wrapper {
-  height: 320px;
-}
-
 .subsection:nth-child(odd) {
   background-color: $orange;
   color: white;
@@ -218,4 +181,14 @@ a, a:hover {
 .subsection:nth-child(even) {
   background-color: white;
   color: $orange;
+}
+
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 10px;
+}
+
+.video-wrapper {
+  height: 320px;
 }
