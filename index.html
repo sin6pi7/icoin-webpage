@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head lang="en">
+    <link rel="stylesheet" type="text/css" href="styles/style.scss"/>
     <meta charset="UTF-8">
     <title>iCoin - fuck bitches get money</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,19 +24,26 @@
 <body data-spy="scroll" data-target=".navbar">
 
 <div id="home" class="section first-section container-fluid">
-    <div class="container center-auto">
+    <div class="container-fluid icons-and-logo-container">
         <div class="row home-header">
-            <div class="logo-wrapper col-md-2">
-                <img class="logo-img" src="images/lincoln.gif"
+            <div class="col-md-12">
+                <div class="pull-left">
+                    <a href="#">pol</a> | <a href="#">eng</a>
+                </div>
+                <div class="pull-right text-right">
+                    <a href="#"><i class="fa fa-twitter anchor-icon"></i></a>
+                    <a href="#"><i class="fa fa-facebook anchor-icon"></i></a>
+                    <a href="#"><i class="fa fa-youtube anchor-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mission-container center-auto">
+        <div class="row">
+            <div class="col-md-12 text-center homepage-welcome-header">
+                <img class="logo-big-homepage" src="images/lincoln.gif"
                      alt="iCoin logo"/>
-            </div>
-            <div class="col-md-6">
-                <h1 class="logo-title">iCoin</h1>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-twitter"></i>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-youtube"></i>
+                    iCoin
             </div>
         </div>
         <div class="row">
@@ -60,7 +68,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand text-center" href="#">iCoin</a>
+            <a class="navbar-brand" href="#home">iCoin</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -81,31 +89,31 @@
         <h1 class="section-title">NASZA DZIAŁALNOŚĆ</h1>
 
         <div class="row">
-            <div class="subsections-tree-wrapper col-md-2 vcenter">
+            <div class="subsections-tree-wrapper col-md-2 vertical-center">
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">23 III</div>
-                    <a class="subsection-anchor" href="#">subsekcja1</a>
+                    <a class="subsection-anchor" href="#our-activity-subsection1">subsekcja1</a>
                 </div>
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">23 III</div>
-                    <a class="subsection-anchor" href="#">subsekcja2</a>
+                    <a class="subsection-anchor" href="#our-activity-subsection2">subsekcja2</a>
                 </div>
                 <div class="data-vertical-line not-active"></div>
                 <div class="subsections-tree-node not-active">
                     <div class="data-circle">31 XII</div>
-                    <a class="subsection-anchor btn disabled" href="#">subsekcja3</a>
+                    <a class="subsection-anchor btn disabled" href="#our-activity-subsection3">subsekcja3</a>
                 </div>
                 <div class="data-vertical-line not-active"></div>
                 <div class="subsections-tree-node not-active">
                     <div class="data-circle">31 XII</div>
-                    <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
+                    <a class="subsection-anchor btn disabled" href="#our-activity-subsection4">subsekcja4</a>
                 </div>
-            </div><div class="logo-wrapper col-md-4 vcenter">
+            </div><div class="text-center col-md-4 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
-            </div><div class="details-wrapper col-md-6 vcenter">
+            </div><div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -128,12 +136,12 @@
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="our-activity-subsection1">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA1</h1>
 
         <div class="row">
-            <div class="details-wrapper col-md-6 vcenter">
+            <div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -152,21 +160,21 @@
                         perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
                 </article>
-            </div><div class="image-wrapper col-md-6 vcenter">
+            </div><div class="image-wrapper col-md-6 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
             </div>
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="our-activity-subsection2">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA2</h1>
 
         <div class="row">
-            <div class="video-wrapper col-md-6 vcenter">
+            <div class="video-wrapper col-md-6 vertical-center">
                 <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-            </div><div class="col-md-6 vcenter">
+            </div><div class="col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -195,31 +203,31 @@
         <h1 class="section-title">STUDY GROUPS</h1>
 
         <div class="row">
-            <div class="subsections-tree-wrapper col-md-2 vcenter">
+            <div class="subsections-tree-wrapper col-md-2 vertical-center">
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">23 III</div>
-                    <a class="subsection-anchor" href="#">subsekcja1</a>
+                    <a class="subsection-anchor" href="#study-groups-subsection1">subsekcja1</a>
                 </div>
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">23 III</div>
-                    <a class="subsection-anchor" href="#">subsekcja2</a>
+                    <a class="subsection-anchor" href="#study-groups-subsection2">subsekcja2</a>
                 </div>
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">31 XII</div>
-                    <a class="subsection-anchor" href="#">subsekcja3</a>
+                    <a class="subsection-anchor" href="#study-groups-subsection3">subsekcja3</a>
                 </div>
                 <div class="data-vertical-line not-active"></div>
                 <div class="subsections-tree-node not-active">
                     <div class="data-circle">31 XII</div>
-                    <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
+                    <a class="subsection-anchor btn disabled" href="#study-groups-subsection4">subsekcja4</a>
                 </div>
-            </div><div class="logo-wrapper col-md-4 vcenter">
+            </div><div class="text-center col-md-4 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
-            </div><div class="details-wrapper col-md-6 vcenter">
+            </div><div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -242,12 +250,12 @@
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="study-groups-subsection1">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA1</h1>
 
         <div class="row">
-            <div class="details-wrapper col-md-6 vcenter">
+            <div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -266,21 +274,21 @@
                         perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
                 </article>
-            </div><div class="image-wrapper col-md-6 vcenter">
+            </div><div class="image-wrapper col-md-6 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
             </div>
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="study-groups-subsection2">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA2</h1>
 
         <div class="row">
-            <div class="video-wrapper col-md-6 vcenter">
+            <div class="video-wrapper col-md-6 vertical-center">
                 <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-            </div><div class="col-md-6 vcenter">
+            </div><div class="col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -303,12 +311,12 @@
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="study-groups-subsection3">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA3</h1>
 
         <div class="row">
-            <div class="details-wrapper col-md-6 vcenter">
+            <div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -327,7 +335,7 @@
                         perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
                 </article>
-            </div><div class="image-wrapper col-md-6 vcenter">
+            </div><div class="image-wrapper col-md-6 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
             </div>
@@ -340,31 +348,31 @@
         <h1 class="section-title">CIEKAWI LUDZIE</h1>
 
         <div class="row">
-            <div class="subsections-tree-wrapper col-md-2 vcenter">
+            <div class="subsections-tree-wrapper col-md-2 vertical-center">
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">23 III</div>
-                    <a class="subsection-anchor" href="#">subsekcja1</a>
+                    <a class="subsection-anchor" href="#interesting-people-subsection1">subsekcja1</a>
                 </div>
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">23 III</div>
-                    <a class="subsection-anchor" href="#">subsekcja2</a>
+                    <a class="subsection-anchor" href="#interesting-people-subsection2">subsekcja2</a>
                 </div>
                 <div class="data-vertical-line"></div>
                 <div class="subsections-tree-node">
                     <div class="data-circle">31 XII</div>
-                    <a class="subsection-anchor" href="#">subsekcja3</a>
+                    <a class="subsection-anchor" href="#interesting-people-subsection3">subsekcja3</a>
                 </div>
                 <div class="data-vertical-line not-active"></div>
                 <div class="subsections-tree-node not-active">
                     <div class="data-circle">31 XII</div>
-                    <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
+                    <a class="subsection-anchor btn disabled" href="#interesting-people-subsection4">subsekcja4</a>
                 </div>
-            </div><div class="logo-wrapper col-md-4 vcenter">
+            </div><div class="text-center col-md-4 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
-            </div><div class="details-wrapper col-md-6 vcenter">
+            </div><div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -387,12 +395,12 @@
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="interesting-people-subsection1">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA1</h1>
 
         <div class="row">
-            <div class="details-wrapper col-md-6 vcenter">
+            <div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -411,21 +419,21 @@
                         perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
                 </article>
-            </div><div class="image-wrapper col-md-6 vcenter">
+            </div><div class="image-wrapper col-md-6 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
             </div>
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="interesting-people-subsection2">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA2</h1>
 
         <div class="row">
-            <div class="video-wrapper col-md-6 vcenter">
+            <div class="video-wrapper col-md-6 vertical-center">
                 <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-            </div><div class="col-md-6 vcenter">
+            </div><div class="col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -448,12 +456,12 @@
         </div>
     </div>
 </div>
-<div class="section subsection container-fluid">
+<div class="section subsection container-fluid" id="interesting-people-subsection3">
     <div class="container center-auto">
         <h1 class="section-title">SUBSEKCJA3</h1>
 
         <div class="row">
-            <div class="details-wrapper col-md-6 vcenter">
+            <div class="details-wrapper col-md-6 vertical-center">
                 <article class="details-row">
                     <h2>Lorem ipsum dolor sit.</h2>
                     <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
@@ -472,7 +480,7 @@
                         perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
                 </article>
-            </div><div class="image-wrapper col-md-6 vcenter">
+            </div><div class="image-wrapper col-md-6 vertical-center">
                 <img class="logo-big" src="images/lincoln.gif"
                      alt="iCoin logo"/>
             </div>
@@ -482,9 +490,7 @@
 <!-- CONTACT -->
 <div id="contact" class="section main-section container-fluid contact-section">
     <div class="container center-auto">
-        <h1 class="section-title">KONTAKT</h1>
-
-        <h1 class="like-finance-title">Lubisz świat finansów?</h1>
+        <h1 class="section-title">LUBISZ ŚWIAT FINANSÓW?</h1>
 
         <div class="row contact-row">
             <div class="col-md-4">
