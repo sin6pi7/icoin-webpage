@@ -7,7 +7,7 @@
   display: inline-block;
   vertical-align: middle; }
 
-/* Navbar */
+/**** NAVBAR ****/
 .navbar.navbar-default {
   width: 100%;
   background-color: #272727;
@@ -54,7 +54,7 @@
   position: fixed;
   top: 0; }
 
-/* Body */
+/**** BODY ****/
 html, body {
   width: 100%;
   height: 100%;
