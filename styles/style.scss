@@ -25,17 +25,7 @@ $max-subsections: 5;
 
 .navbar.navbar-default {
 
-  @media (min-width: 768px) {
-    position: absolute;
-    bottom: 0;
-  }
-
-  @media (max-width: 768px) {
-    position: fixed;
-    top: 0;
-  }
-
-    width: 100%;
+  width: 100%;
   background-color: $dark-grey;
   border: none;
   margin-bottom: 0;
@@ -73,11 +63,30 @@ $max-subsections: 5;
       text-align: center;
     }
 
-    a.nav-item:hover, a.active {
+    a.nav-item:hover, li.active > a {
       background-color: $orange;
       color: $dark-grey;
     }
   }
+}
+
+/* positioning classes required by affix bootstrap plugin */
+
+.affix-top {
+  @media (min-width: 768px) {
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+  }
+}
+
+.affix {
+  position: fixed;
+  top: 0;
 }
 
 /* Body */

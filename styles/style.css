@@ -16,14 +16,6 @@
   background-color: #272727;
   border: none;
   margin-bottom: 0; }
-  @media (min-width: 768px) {
-    .navbar.navbar-default {
-      position: absolute;
-      bottom: 0; } }
-  @media (max-width: 768px) {
-    .navbar.navbar-default {
-      position: fixed;
-      top: 0; } }
   .navbar.navbar-default .navbar-container {
     padding: 0 5%; }
     .navbar.navbar-default .navbar-container a.navbar-brand {
@@ -43,9 +35,23 @@
       text-decoration: none;
       color: white;
       text-align: center; }
-    .navbar.navbar-default .navbar-container a.nav-item:hover, .navbar.navbar-default .navbar-container a.active {
+    .navbar.navbar-default .navbar-container a.nav-item:hover, .navbar.navbar-default .navbar-container li.active > a {
       background-color: #f27b35;
       color: #272727; }
+
+/* positioning classes required by affix bootstrap plugin */
+@media (min-width: 768px) {
+  .affix-top {
+    position: absolute;
+    bottom: 0; } }
+@media (max-width: 768px) {
+  .affix-top {
+    position: fixed;
+    top: 0; } }
+
+.affix {
+  position: fixed;
+  top: 0; }
 
 /* Body */
 html, body {

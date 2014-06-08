@@ -29,4 +29,12 @@ function init() {
         e.preventDefault();
         $($(this).attr('href')).scrollTo();
     });
+
+    $('.navbar').affix({
+        offset: {
+            top: function () {
+                return (this.top = ($(window).height() - $('.navbar').height()));
+            }
+        }
+    })
 }
