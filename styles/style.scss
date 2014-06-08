@@ -32,6 +32,12 @@ $main-sections: 5;
       color: white;
       font-size: 2em;
       font-weight: 600;
+
+      #navbar-logo {
+        display: none;
+        height: 30px;
+        margin-top: -5px;
+      }
     }
 
     .navbar-nav {
@@ -240,4 +246,5 @@ a, a:hover {
     margin-right: 5px;
   }
 }
+
 

@@ -19,6 +19,10 @@
       color: white;
       font-size: 2em;
       font-weight: 600; }
+      .navbar.navbar-default .navbar-container a.navbar-brand #navbar-logo {
+        display: none;
+        height: 30px;
+        margin-top: -5px; }
     @media (min-width: 768px) {
       .navbar.navbar-default .navbar-container .navbar-nav {
         width: 83.33333%; } }
