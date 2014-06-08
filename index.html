@@ -16,378 +16,517 @@
 
     <!-- scripts -->
     <script src="scripts/jquery-1.11.0.min.js"></script>
-    <!-- minify in production -->
-    <script src="scripts/stickUp.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="scripts/scrollTo.js"></script>
     <script src="scripts/script.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
-    <section id="home" class="first-section container-fluid">
-        <div class="container center-auto">
-            <div class="row home-header">
-                <div class="logo-wrapper col-md-2">
-                    <img class="logo-img" src="images/lincoln.gif"
-                         alt="iCoin logo"/>
-                </div>
-                <div class="col-md-6">
-                    <h1 class="logo-title">iCoin</h1>
-                </div>
-                <div class="col-md-4">
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-youtube"></i>
-                </div>
+<div id="home" class="section first-section container-fluid">
+    <div class="container center-auto">
+        <div class="row home-header">
+            <div class="logo-wrapper col-md-2">
+                <img class="logo-img" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
             </div>
-            <div class="row">
-                <div class="jumbotron mission">
-                    <h1>Fuck bitches, get money</h1>
-                    <p>Naszym celem jest poszerzanie świadomości finansowej i przedsiębiorczości pośród specjalistów IT,
-                        w szczególności wśród studentów i absolwentów wydziału IET. Realizujemy to poprzez prowadzenie
-                        wykładów, warsztatów, a także nawiązywanie kontaktów z ekspertami i przedsiębiorcami. Obecnie
-                        koło liczy prawie 100 członków.</p>
-                </div>
-
+            <div class="col-md-6">
+                <h1 class="logo-title">iCoin</h1>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-youtube"></i>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="jumbotron mission">
+                <h1>Fuck bitches, get money</h1>
+                <p>Naszym celem jest poszerzanie świadomości finansowej i przedsiębiorczości pośród specjalistów IT,
+                    w szczególności wśród studentów i absolwentów wydziału IET. Realizujemy to poprzez prowadzenie
+                    wykładów, warsztatów, a także nawiązywanie kontaktów z ekspertami i przedsiębiorcami. Obecnie
+                    koło liczy prawie 100 członków.</p>
+            </div>
 
-    <header>
-        <nav>
-            <a href="#home" class="logo-anchor"><div class="logo-nav-item">iCoin</div></a>
-            <a href="#home" class="nav-item">Home</a>
-            <a href="#our-activity" class="nav-item">Nasza działalność</a>
-            <a href="#study-groups" class="nav-item">Study groups</a>
-            <a href="#interesting-people" class="nav-item">Ciekawi ludzie</a>
-            <a href="#contact" class="nav-item">Kontakt</a>
-        </nav>
-    </header>
+        </div>
+    </div>
+</div>
 
-    <span id="our-activity" class="sections-wrapper">
-        <section class="main-section container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">NASZA DZIAŁALNOŚĆ</h1>
-                <div class="row">
-                    <div class="subsections-tree-wrapper col-md-2 vcenter">
-                        <div class="data-vertical-line"></div>
-                        <div class="subsections-tree-node">
-                            <div class="data-circle">23 III</div>
-                            <a class="subsection-anchor" href="#">subsekcja1</a>
-                        </div>
-                        <div class="data-vertical-line"></div>
-                        <div class="subsections-tree-node">
-                            <div class="data-circle">23 III</div>
-                            <a class="subsection-anchor" href="#">subsekcja2</a>
-                        </div>
-                        <div class="data-vertical-line not-active"></div>
-                        <div class="subsections-tree-node not-active">
-                            <div class="data-circle">31 XII</div>
-                            <a class="subsection-anchor btn disabled" href="#">subsekcja3</a>
-                        </div>
-                        <div class="data-vertical-line not-active"></div>
-                        <div class="subsections-tree-node not-active">
-                            <div class="data-circle">31 XII</div>
-                            <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
-                        </div>
-                    </div><div class="logo-wrapper col-md-4 vcenter">
-                        <img class="logo-big" src="images/lincoln.gif"
-                             alt="iCoin logo"/>
-                    </div><div class="details-wrapper col-md-6 vcenter">
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="navbar-container container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand text-center" href="#">iCoin</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-item" href="#home">Home</a></li>
+                <li><a class="nav-item" href="#our-activity">Nasza działalność</a></li>
+                <li><a class="nav-item" href="#study-groups">Study groups</a></li>
+                <li><a class="nav-item" href="#interesting-people">Ciekawi ludzie</a></li>
+                <li><a class="nav-item" href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- OUR ACTIVITY -->
+<div id="our-activity" class="section main-section container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">NASZA DZIAŁALNOŚĆ</h1>
+
+        <div class="row">
+            <div class="subsections-tree-wrapper col-md-2 vcenter">
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">23 III</div>
+                    <a class="subsection-anchor" href="#">subsekcja1</a>
                 </div>
-            </div>
-        </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA1</h1>
-                <div class="row">
-                    <div class="details-wrapper col-md-6 vcenter">
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div><!--
-                    --><div class="image-wrapper col-md-6 vcenter">
-                            <img class="logo-big" src="images/lincoln.gif"
-                                 alt="iCoin logo"/>
-                    </div>
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">23 III</div>
+                    <a class="subsection-anchor" href="#">subsekcja2</a>
                 </div>
-            </div>
-        </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA2</h1>
-                <div class="row">
-                    <div class="video-wrapper col-md-6 vcenter">
-                        <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-                    </div><!--
-                    --><div class="col-md-6 vcenter">
-                    <article class="details-row">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
+                <div class="data-vertical-line not-active"></div>
+                <div class="subsections-tree-node not-active">
+                    <div class="data-circle">31 XII</div>
+                    <a class="subsection-anchor btn disabled" href="#">subsekcja3</a>
+                </div>
+                <div class="data-vertical-line not-active"></div>
+                <div class="subsections-tree-node not-active">
+                    <div class="data-circle">31 XII</div>
+                    <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
+                </div>
+            </div><div class="logo-wrapper col-md-4 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
+            </div><div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
                     </article>
-                    <article class="details-row">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
-                    </div>
-                </div>
+                </article>
             </div>
-        </section>
-    </span>
-    <span id="study-groups" class="sections-wrapper">
-         <section class="main-section container-fluid">
-             <div class="container center-auto">
-                 <h1 class="section-title">STUDY GROUPS</h1>
-                 <div class="row">
-                     <div class="subsections-tree-wrapper col-md-2 vcenter">
-                         <div class="data-vertical-line"></div>
-                         <div class="subsections-tree-node">
-                             <div class="data-circle">23 III</div>
-                             <a class="subsection-anchor" href="#">subsekcja1</a>
-                         </div>
-                         <div class="data-vertical-line"></div>
-                         <div class="subsections-tree-node">
-                             <div class="data-circle">23 III</div>
-                             <a class="subsection-anchor" href="#">subsekcja2</a>
-                         </div>
-                         <div class="data-vertical-line"></div>
-                         <div class="subsections-tree-node">
-                             <div class="data-circle">31 XII</div>
-                             <a class="subsection-anchor" href="#">subsekcja3</a>
-                         </div>
-                         <div class="data-vertical-line not-active"></div>
-                         <div class="subsections-tree-node not-active">
-                             <div class="data-circle">31 XII</div>
-                             <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
-                         </div>
-                     </div><div class="logo-wrapper col-md-4 vcenter">
-                     <img class="logo-big" src="images/lincoln.gif"
-                          alt="iCoin logo"/>
-                 </div><div class="details-wrapper col-md-6 vcenter">
-                     <article class="details-row">
-                         <h2>Lorem ipsum dolor sit.</h2>
-                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                     </article>
-                     <article class="details-row">
-                         <h2>Lorem ipsum dolor sit.</h2>
-                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                     </article>
-                 </div>
-                 </div>
-             </div>
-         </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA1</h1>
-                <div class="row">
-                    <div class="details-wrapper col-md-6 vcenter">
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div><!--
-                    --><div class="image-wrapper col-md-6 vcenter">
-                    <img class="logo-big" src="images/lincoln.gif"
-                         alt="iCoin logo"/>
-                </div>
-                </div>
-            </div>
-        </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA2</h1>
-                <div class="row">
-                    <div class="video-wrapper col-md-6 vcenter">
-                        <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-                    </div><!--
-                    --><div class="col-md-6 vcenter">
-                    <article class="details-row">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA1</h1>
+
+        <div class="row">
+            <div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
                     </article>
-                    <article class="details-row">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
-                </div>
-                </div>
+                </article>
+            </div><div class="image-wrapper col-md-6 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
             </div>
-        </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA3</h1>
-                <div class="row">
-                    <div class="details-wrapper col-md-6 vcenter">
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div><!--
-                    --><div class="image-wrapper col-md-6 vcenter">
-                    <img class="logo-big" src="images/lincoln.gif"
-                         alt="iCoin logo"/>
-                </div>
-                </div>
-            </div>
-        </section>
-    </span>
-    <span id="interesting-people" class="sections-wrapper">
-         <section class="main-section container-fluid">
-             <div class="container center-auto">
-                 <h1 class="section-title">CIEKAWI LUDZIE</h1>
-                 <div class="row">
-                     <div class="subsections-tree-wrapper col-md-2 vcenter">
-                         <div class="data-vertical-line"></div>
-                         <div class="subsections-tree-node">
-                             <div class="data-circle">23 III</div>
-                             <a class="subsection-anchor" href="#">subsekcja1</a>
-                         </div>
-                         <div class="data-vertical-line"></div>
-                         <div class="subsections-tree-node">
-                             <div class="data-circle">23 III</div>
-                             <a class="subsection-anchor" href="#">subsekcja2</a>
-                         </div>
-                         <div class="data-vertical-line"></div>
-                         <div class="subsections-tree-node">
-                             <div class="data-circle">31 XII</div>
-                             <a class="subsection-anchor" href="#">subsekcja3</a>
-                         </div>
-                         <div class="data-vertical-line not-active"></div>
-                         <div class="subsections-tree-node not-active">
-                             <div class="data-circle">31 XII</div>
-                             <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
-                         </div>
-                     </div><div class="logo-wrapper col-md-4 vcenter">
-                     <img class="logo-big" src="images/lincoln.gif"
-                          alt="iCoin logo"/>
-                 </div><div class="details-wrapper col-md-6 vcenter">
-                     <article class="details-row">
-                         <h2>Lorem ipsum dolor sit.</h2>
-                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                     </article>
-                     <article class="details-row">
-                         <h2>Lorem ipsum dolor sit.</h2>
-                         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                     </article>
-                 </div>
-                 </div>
-             </div>
-         </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA1</h1>
-                <div class="row">
-                    <div class="details-wrapper col-md-6 vcenter">
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div><!--
-                    --><div class="image-wrapper col-md-6 vcenter">
-                    <img class="logo-big" src="images/lincoln.gif"
-                         alt="iCoin logo"/>
-                </div>
-                </div>
-            </div>
-        </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA2</h1>
-                <div class="row">
-                    <div class="video-wrapper col-md-6 vcenter">
-                        <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
-                    </div><!--
-                    --><div class="col-md-6 vcenter">
-                    <article class="details-row">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA2</h1>
+
+        <div class="row">
+            <div class="video-wrapper col-md-6 vcenter">
+                <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+            </div><div class="col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
                     </article>
-                    <article class="details-row">
-                        <h2>Lorem ipsum dolor sit.</h2>
-                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
                     </article>
-                </div>
-                </div>
+                </article>
             </div>
-        </section>
-        <section class="subsection container-fluid">
-            <div class="container center-auto">
-                <h1 class="section-title">SUBSEKCJA3</h1>
-                <div class="row">
-                    <div class="details-wrapper col-md-6 vcenter">
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                        <article class="details-row">
-                            <h2>Lorem ipsum dolor sit.</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div><!--
-                    --><div class="image-wrapper col-md-6 vcenter">
-                    <img class="logo-big" src="images/lincoln.gif"
-                         alt="iCoin logo"/>
+        </div>
+    </div>
+</div>
+<!-- STUDY GROUPS -->
+<div id="study-groups" class="section main-section container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">STUDY GROUPS</h1>
+
+        <div class="row">
+            <div class="subsections-tree-wrapper col-md-2 vcenter">
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">23 III</div>
+                    <a class="subsection-anchor" href="#">subsekcja1</a>
                 </div>
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">23 III</div>
+                    <a class="subsection-anchor" href="#">subsekcja2</a>
                 </div>
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">31 XII</div>
+                    <a class="subsection-anchor" href="#">subsekcja3</a>
+                </div>
+                <div class="data-vertical-line not-active"></div>
+                <div class="subsections-tree-node not-active">
+                    <div class="data-circle">31 XII</div>
+                    <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
+                </div>
+            </div><div class="logo-wrapper col-md-4 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
+            </div><div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
             </div>
-        </section>
-    </span>
-    <span id="contact" class="sections-wrapper">
-        <section class="main-section container-fluid contact-section">
-            <div class="container center-auto">
-                <h1 class="section-title">KONTAKT</h1>
-                <h1 class="like-finance-title">Lubisz świat finansów?</h1>
-                <div class="row contact-row">
-                    <div class="col-md-4">
-                        <img src="images/contact-student.png" alt="student"/>
-                        <article class="details-row">
-                            <h2 class="contact-title">Studenci</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?</article>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/contact-expert.png" alt="ekspert"/>
-                        <article class="details-row">
-                            <h2 class="contact-title">Eksperci</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="images/contact-entrepreneur.png" alt="przedsięborca"/>
-                        <article class="details-row">
-                            <h2 class="contact-title">Przedsięborcy</h2>
-                            <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!</article>
-                        </article>
-                    </div>
-                </div>
-                <h1 class="contact-title">Zapraszamy! <a href="#">email@example.com</a></h1>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA1</h1>
+
+        <div class="row">
+            <div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div><div class="image-wrapper col-md-6 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
             </div>
-        </section>
-    </span>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA2</h1>
+
+        <div class="row">
+            <div class="video-wrapper col-md-6 vcenter">
+                <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+            </div><div class="col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA3</h1>
+
+        <div class="row">
+            <div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div><div class="image-wrapper col-md-6 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- INTERESTING PEOPLE -->
+<div id="interesting-people" class="section main-section container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">CIEKAWI LUDZIE</h1>
+
+        <div class="row">
+            <div class="subsections-tree-wrapper col-md-2 vcenter">
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">23 III</div>
+                    <a class="subsection-anchor" href="#">subsekcja1</a>
+                </div>
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">23 III</div>
+                    <a class="subsection-anchor" href="#">subsekcja2</a>
+                </div>
+                <div class="data-vertical-line"></div>
+                <div class="subsections-tree-node">
+                    <div class="data-circle">31 XII</div>
+                    <a class="subsection-anchor" href="#">subsekcja3</a>
+                </div>
+                <div class="data-vertical-line not-active"></div>
+                <div class="subsections-tree-node not-active">
+                    <div class="data-circle">31 XII</div>
+                    <a class="subsection-anchor btn disabled" href="#">subsekcja4</a>
+                </div>
+            </div><div class="logo-wrapper col-md-4 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
+            </div><div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA1</h1>
+
+        <div class="row">
+            <div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div><div class="image-wrapper col-md-6 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA2</h1>
+
+        <div class="row">
+            <div class="video-wrapper col-md-6 vcenter">
+                <iframe class="video" src="http://www.youtube.com/embed/XGSy3_Czz8k"></iframe>
+            </div><div class="col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section subsection container-fluid">
+    <div class="container center-auto">
+        <h1 class="section-title">SUBSEKCJA3</h1>
+
+        <div class="row">
+            <div class="details-wrapper col-md-6 vcenter">
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+                <article class="details-row">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div><div class="image-wrapper col-md-6 vcenter">
+                <img class="logo-big" src="images/lincoln.gif"
+                     alt="iCoin logo"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CONTACT -->
+<div id="contact" class="section main-section container-fluid contact-section">
+    <div class="container center-auto">
+        <h1 class="section-title">KONTAKT</h1>
+
+        <h1 class="like-finance-title">Lubisz świat finansów?</h1>
+
+        <div class="row contact-row">
+            <div class="col-md-4">
+                <img src="images/contact-student.png" alt="student"/>
+                <article class="details-row">
+                    <h2 class="contact-title">Studenci</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorem
+                        doloribus id maiores minima modi non, quo soluta! Adipisci, architecto dolor ducimus ea earum
+                        expedita impedit ipsa maiores non officiis ratione reprehenderit sunt! Aspernatur cumque
+                        delectus dicta, doloremque ex expedita illum ipsa laudantium nam nisi non nostrum nulla officia
+                        perspiciatis quibusdam quis quod saepe sed sit sunt temporibus voluptatem?
+                    </article>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <img src="images/contact-expert.png" alt="ekspert"/>
+                <article class="details-row">
+                    <h2 class="contact-title">Eksperci</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <img src="images/contact-entrepreneur.png" alt="przedsięborca"/>
+                <article class="details-row">
+                    <h2 class="contact-title">Przedsięborcy</h2>
+                    <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis doloribus earum eum
+                        laudantium nobis numquam obcaecati quibusdam similique totam? Aut blanditiis eaque ratione
+                        suscipit. A ab alias esse excepturi explicabo, illum laborum nam nostrum omnis possimus
+                        reiciendis sunt voluptate voluptatem? A blanditiis consectetur delectus ducimus eaque enim et
+                        excepturi expedita, fugiat incidunt, laudantium minima natus nobis omnis quod sed voluptatibus!
+                    </article>
+                </article>
+            </div>
+        </div>
+        <h1 class="contact-title">Zapraszamy! <a href="mailto:email@example.com">email@example.com</a></h1>
+    </div>
+</div>
+
 </body>
 </html>

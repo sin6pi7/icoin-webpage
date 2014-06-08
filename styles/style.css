@@ -11,37 +11,47 @@
   vertical-align: middle; }
 
 /* Navbar */
-header {
-  position: absolute;
-  bottom: 0;
+.navbar.navbar-default {
   width: 100%;
-  min-width: 960px;
-  height: auto;
-  margin: auto;
   background-color: #272727;
-  z-index: 99999; }
+  border: none;
+  margin-bottom: 0; }
+  .navbar.navbar-default .navbar-container {
+    padding: 0 5%; }
+    .navbar.navbar-default .navbar-container a.navbar-brand {
+      color: white;
+      font-size: 2em;
+      font-weight: 600; }
+    @media (min-width: 768px) {
+      .navbar.navbar-default .navbar-container .navbar-nav {
+        width: 83.33333%; } }
+    @media (min-width: 768px) {
+      .navbar.navbar-default .navbar-container .navbar-nav li {
+        width: 20%; } }
+    @media (min-width: 768px) {
+      .navbar.navbar-default .navbar-container .navbar-header {
+        width: 16.66667%; } }
+    .navbar.navbar-default .navbar-container a.nav-item {
+      text-decoration: none;
+      color: white;
+      text-align: center; }
+    .navbar.navbar-default .navbar-container a.nav-item:hover, .navbar.navbar-default .navbar-container li.active > a {
+      background-color: #f27b35;
+      color: #272727; }
 
-nav {
-  height: 3em;
-  line-height: 3em;
-  margin: 0 5%; }
-  nav .nav-item, nav .logo-nav-item {
-    float: left;
-    width: 16.33333%;
-    text-decoration: none;
-    color: white;
-    text-align: center; }
-  nav .logo-nav-item {
-    font-size: 2em;
-    font-weight: 600;
-    -webkit-transition: font-size 0.2s;
-    /* For Safari 3.1 to 6.0 */
-    transition: font-size 0.2s; }
-  nav .logo-nav-item:hover {
-    font-size: 2.17em; }
-  nav a:hover, nav .active {
-    background-color: #f27b35;
-    color: #272727; }
+/* positioning classes required by affix bootstrap plugin */
+@media (min-width: 768px) {
+  .affix-top {
+    position: absolute;
+    bottom: 0; } }
+@media (max-width: 768px) {
+  .affix-top {
+    position: fixed;
+    top: 0; } }
+
+.affix {
+  position: fixed;
+  top: 0; }
 
 /* Body */
 html, body {
@@ -52,15 +62,15 @@ html, body {
 a, a:hover {
   color: #f27b35; }
 
-section {
+.section {
   position: relative;
   min-height: 100%; }
-  section .section-title {
+  .section .section-title {
     margin-bottom: 0.8em;
     text-align: center;
     font-size: 3em;
     font-weight: 600; }
-  section article {
+  .section article {
     text-align: justify; }
 
 .first-section {
@@ -116,14 +126,6 @@ section {
 .subsection {
   text-align: center; }
 
-.video {
-  min-width: 100%;
-  min-height: 100%;
-  margin-top: 10px; }
-
-.video-wrapper {
-  height: 320px; }
-
 .subsection:nth-child(odd) {
   background-color: #f27b35;
   color: white; }
@@ -131,3 +133,11 @@ section {
 .subsection:nth-child(even) {
   background-color: white;
   color: #f27b35; }
+
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  margin-top: 10px; }
+
+.video-wrapper {
+  height: 320px; }
