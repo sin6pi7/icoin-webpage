@@ -9,8 +9,8 @@ function init() {
 }
 function centerSectionsContent() {
     $(".center-auto").each(function(){
-        var parent_height = $(this).parent().height();
-        var top = (parent_height - $(this).outerHeight(true)) / 2;
+        var parentHeight = $(this).parent().height();
+        var top = (parentHeight - $(this).outerHeight(true)) / 2;
         if ($(this).hasClass("mission-container")) {
             top -= $(".icons-and-logo-container").height();
         }
