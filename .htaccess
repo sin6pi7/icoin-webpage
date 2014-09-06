@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^icoin\.edu\.pl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.icoin\.edu\.pl$
+RewriteRule ^en$ "index-en.html" [L]
+
+Options -Indexes
