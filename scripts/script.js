@@ -21,7 +21,7 @@ function centerSectionsContent() {
     });
 }
 function setUpAnchors() {
-    $(".subsection-anchor, .nav-item, .navbar-brand").on("click", function (e) {
+    $(".js-anchor-scroll").on("click", function (e) {
         e.preventDefault();
         $($(this).attr("href")).scrollTo();
     });
