@@ -23,13 +23,13 @@
         display: none;
         height: 30px;
         margin-top: -5px; }
-    @media (min-width: 768px) {
+    @media (min-width: 819px) {
       .navbar.navbar-default .navbar-container .navbar-nav {
         width: 83.33333%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 819px) {
       .navbar.navbar-default .navbar-container .navbar-nav li {
         width: 20%; } }
-    @media (min-width: 768px) {
+    @media (min-width: 819px) {
       .navbar.navbar-default .navbar-container .navbar-header {
         width: 16.66667%; } }
     .navbar.navbar-default .navbar-container a.nav-item {
@@ -41,11 +41,11 @@
       color: #272727; }
 
 /* positioning classes required by affix bootstrap plugin */
-@media (min-width: 768px) {
+@media (min-width: 819px) {
   .affix-top {
     position: absolute;
     bottom: 0; } }
-@media (max-width: 768px) {
+@media (max-width: 819px) {
   .affix-top {
     position: fixed;
     top: 0; } }
