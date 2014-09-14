@@ -3,6 +3,7 @@ $light-grey: #f1f1f1;
 $dark-grey: #272727;
 $orange: #f27b35;
 $main-sections: 5;
+// $navbar-
 
 /* Helper classes */
 
@@ -165,6 +166,8 @@ a, a:hover {
     }
 
     .mission {
+      padding-top: 0;
+      padding-bottom: 0;
       background-color: rgba(0, 0, 0, 0);
     }
   }

@@ -1,11 +1,11 @@
 $(window).load(function () {
     init();
 });
-
 function init() {
     centerSectionsContent();
     setUpAnchors();
     setUpNavbarAffix();
+    $(window).resize(setUpNavbarAffix);
 }
 function centerSectionsContent() {
     $(".center-auto").each(function(){
@@ -27,10 +27,17 @@ function setUpAnchors() {
     });
 }
 function setUpNavbarAffix() {
-    $(".navbar").affix({
+    var homepageHeight = $("#home").height(),
+        windowHeight = $(window).height()
+        navbar = $(".navbar");
+        topOffset = homepageHeight - navbar.height();
+    if (homepageHeight > windowHeight) {
+        topOffset = 0;        
+    } 
+    navbar.affix({
         offset: {
             top: function () {
-                return (this.top = ($(window).height() - $(".navbar").height()));
+                return (this.top = topOffset);
             }
         }
     }).on('affix.bs.affix affix-top.bs.affix', function () {
