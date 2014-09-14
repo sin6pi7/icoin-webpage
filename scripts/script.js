@@ -5,7 +5,6 @@ function init() {
     centerSectionsContent();
     setUpAnchors();
     setUpNavbarAffix();
-    // $(window).resize(setUpNavbarAffix);
 }
 function centerSectionsContent() {
     $(".center-auto").each(function(){
