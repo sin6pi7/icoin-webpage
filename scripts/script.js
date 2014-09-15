@@ -13,16 +13,18 @@ function centerSectionsContent() {
         if ($(this).hasClass("mission-container")) {
             top -= $(".icons-and-logo-container").height();
         }
-        if(top > 0){
+        if (top > 0){
             $(this).css("position", "relative");
             $(this).css("top", top);
         }
     });
 }
 function setUpAnchors() {
+    var href;
     $(".js-anchor-scroll").on("click", function (e) {
+        href = $(this).attr("href") || $(this).children("a").attr("href");
         e.preventDefault();
-        $($(this).attr("href")).scrollTo();
+        $(href).scrollTo();
     });
 }
 function setUpNavbarAffix() {
@@ -31,8 +33,8 @@ function setUpNavbarAffix() {
         navbar = $(".navbar");
         topOffset = homepageHeight - navbar.height();
     if (homepageHeight > windowHeight) {
-        topOffset = 0;        
-    } 
+        topOffset = 0;
+    }
     navbar.affix({
         offset: {
             top: function () {

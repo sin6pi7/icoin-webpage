@@ -3,24 +3,19 @@ $light-grey: #f1f1f1;
 $dark-grey: #272727;
 $orange: #f27b35;
 $main-sections: 5;
-// $navbar-
 
-/* Helper classes */
-
+// HELPER CLASSES
 .center-auto {
   margin: 50px auto;
 }
-
 .vertical-center {
   float:none;
   display:inline-block;
   vertical-align:middle;
 }
 
-/**** NAVBAR ****/
-
+// NAVBAR
 .navbar.navbar-default {
-
   width: 100%;
   background-color: $dark-grey;
   border: none;
@@ -43,36 +38,44 @@ $main-sections: 5;
 
     .navbar-nav {
       @media (min-width: 819px) {
+        display: table;
         width: 100% - 100%/($main-sections + 1);
       }
 
       li {
         @media (min-width: 819px) {
+          display: table-cell;
+          float: none;
+          vertical-align: middle;
           width: 100%/$main-sections;
+          cursor: pointer;
+        }
+        &:hover,
+        &.active,
+        &.active > a.nav-item {
+          background-color: $orange;
+          color: $dark-grey;
         }
       }
     }
-
     .navbar-header {
         @media (min-width: 819px) {
           width: 100%/($main-sections + 1);
         }
     }
-
     a.nav-item {
       text-decoration: none;
       color: white;
       text-align: center;
     }
-
-    a.nav-item:hover, li.active > a {
-      background-color: $orange;
-      color: $dark-grey;
+    a.nav-item:hover {
+      background-color: inherit;
+      color: inherit;
     }
   }
 }
 
-/* positioning classes required by affix bootstrap plugin */
+// positioning classes required by affix bootstrap plugin
 
 .affix-top {
   @media (min-width: 819px) {
@@ -91,8 +94,7 @@ $main-sections: 5;
   top: 0;
 }
 
-/**** BODY ****/
-
+// BODY
 html, body {
   width: 100%;
   height: 100%;
@@ -105,7 +107,8 @@ body {
   }
 }
 
-a, a:hover {
+a,
+a:hover {
   color: $orange;
 }
 
@@ -219,27 +222,21 @@ a, a:hover {
   min-height: 100%;
   margin-top: 10px;
 }
-
 .video-wrapper {
   height: 320px;
 }
-
 .data-vertical-line {
   margin-left: 20px;
   height: 30px;
   border-left: 1px solid white;
 }
-
 .not-active, .not-active .data-circle {
   border-style: dotted !important;
-
   a {
     padding: 0;
   }
 }
-
 .subsections-tree-node {
-
   .data-circle {
     display: inline-block;
     height: 40px;
