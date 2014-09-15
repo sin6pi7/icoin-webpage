@@ -17,6 +17,12 @@
       color: white;
       font-size: 2em;
       font-weight: 600; }
+      @media (min-width: 819px) {
+        .navbar.navbar-default .navbar-container a.navbar-brand {
+          line-height: 40px; } }
+      @media (min-width: 1282px) {
+        .navbar.navbar-default .navbar-container a.navbar-brand {
+          line-height: 20px; } }
       .navbar.navbar-default .navbar-container a.navbar-brand #navbar-logo {
         display: none;
         height: 30px;
