@@ -57,12 +57,12 @@
   top: 60px;
   right: 0px;
   z-index: 2;
-  width: 45px; }
+  width: 35px; }
 
 .sidenav-icon {
   display: block;
   float: right;
-  width: 35px;
+  width: 28px;
   height: 40px;
   margin-bottom: 5px;
   padding-right: 5px;
@@ -75,7 +75,7 @@
   .sidenav-icon:first-child {
     font-size: 20px; }
   .sidenav-icon:hover {
-    width: 45px; }
+    width: 35px; }
 
 @media (min-width: 819px) {
   .affix-top {
