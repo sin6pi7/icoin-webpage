@@ -1,63 +1,85 @@
 .center-auto {
-  margin: 50px auto; }
+  margin: 50px auto;
+}
 
 .vertical-center {
   float: none;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 .navbar.navbar-default {
   width: 100%;
   background-color: #272727;
   border: none;
-  margin-bottom: 0; }
-  .navbar.navbar-default .navbar-container {
-    padding: 0 5%; }
-    .navbar.navbar-default .navbar-container a.navbar-brand {
-      color: white;
-      font-size: 2em;
-      font-weight: 600; }
-      @media (min-width: 819px) {
-        .navbar.navbar-default .navbar-container a.navbar-brand {
-          line-height: 40px; } }
-      @media (min-width: 1282px) {
-        .navbar.navbar-default .navbar-container a.navbar-brand {
-          line-height: 20px; } }
-      .navbar.navbar-default .navbar-container a.navbar-brand #navbar-logo {
-        display: none;
-        height: 30px;
-        margin-top: -5px; }
-    @media (min-width: 819px) {
-      .navbar.navbar-default .navbar-container .navbar-nav {
-        display: table;
-        width: 83.33333%; } }
-    @media (min-width: 819px) {
-      .navbar.navbar-default .navbar-container .navbar-nav li {
-        display: table-cell;
-        float: none;
-        vertical-align: middle;
-        width: 20%;
-        cursor: pointer; } }
-    .navbar.navbar-default .navbar-container .navbar-nav li:hover, .navbar.navbar-default .navbar-container .navbar-nav li.active, .navbar.navbar-default .navbar-container .navbar-nav li.active > a.nav-item {
-      background-color: #f27b35;
-      color: #272727; }
-    @media (min-width: 819px) {
-      .navbar.navbar-default .navbar-container .navbar-header {
-        width: 16.66667%; } }
-    .navbar.navbar-default .navbar-container a.nav-item {
-      text-decoration: none;
-      color: white;
-      text-align: center; }
-    .navbar.navbar-default .navbar-container a.nav-item:hover {
-      background-color: inherit;
-      color: inherit; }
+  margin-bottom: 0;
+}
+.navbar.navbar-default .navbar-container {
+  padding: 0 5%;
+}
+.navbar.navbar-default .navbar-container a.navbar-brand {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+}
+@media (min-width: 819px) {
+  .navbar.navbar-default .navbar-container a.navbar-brand {
+    line-height: 40px;
+  }
+}
+@media (min-width: 1282px) {
+  .navbar.navbar-default .navbar-container a.navbar-brand {
+    line-height: 20px;
+  }
+}
+.navbar.navbar-default .navbar-container a.navbar-brand #navbar-logo {
+  display: none;
+  height: 30px;
+  margin-top: -5px;
+}
+@media (min-width: 819px) {
+  .navbar.navbar-default .navbar-container .navbar-nav {
+    display: table;
+    width: 83.33333%;
+  }
+}
+@media (min-width: 819px) {
+  .navbar.navbar-default .navbar-container .navbar-nav li {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    width: 20%;
+    cursor: pointer;
+  }
+}
+.navbar.navbar-default .navbar-container .navbar-nav li:hover,
+.navbar.navbar-default .navbar-container .navbar-nav li.active,
+.navbar.navbar-default .navbar-container .navbar-nav li.active > a.nav-item {
+  background-color: #f27b35;
+  color: #272727;
+}
+@media (min-width: 819px) {
+  .navbar.navbar-default .navbar-container .navbar-header {
+    width: 16.66667%;
+  }
+}
+.navbar.navbar-default .navbar-container a.nav-item {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.navbar.navbar-default .navbar-container a.nav-item:hover {
+  background-color: inherit;
+  color: inherit;
+}
 
 .sidenav-icons {
   position: fixed;
   top: 60px;
   right: 0px;
   z-index: 2;
-  width: 35px; }
+  width: 35px;
+}
 
 .sidenav-icon {
   display: block;
@@ -71,124 +93,168 @@
   background-color: white;
   border-radius: 5px 0 0 5px;
   font-size: 15px;
-  line-height: 40px; }
-  .sidenav-icon:first-child {
-    font-size: 20px; }
-  .sidenav-icon:hover {
-    width: 35px; }
+  line-height: 40px;
+}
+.sidenav-icon:first-child {
+  font-size: 20px;
+}
+.sidenav-icon:hover {
+  width: 35px;
+}
 
 @media (min-width: 819px) {
   .affix-top {
     position: absolute;
-    bottom: 0; } }
+    bottom: 0;
+  }
+}
 @media (max-width: 819px) {
   .affix-top {
     position: fixed;
-    top: 0; } }
+    top: 0;
+  }
+}
 
 .affix {
   position: fixed;
-  top: 0; }
+  top: 0;
+}
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+}
 
 @media (max-width: 768px) {
   body {
-    padding-top: 50px; } }
+    padding-top: 50px;
+  }
+}
 
 a,
 a:hover {
-  color: #f27b35; }
+  color: #f27b35;
+}
 
 .section {
   position: relative;
-  min-height: 100%; }
-  .section .section-title {
-    margin-bottom: 0.8em;
-    text-align: center;
-    font-size: 3em;
-    font-weight: 600; }
-  .section article {
-    text-align: justify; }
+  min-height: 100%;
+}
+.section .section-title {
+  margin-bottom: 0.8em;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+}
+.section article {
+  text-align: justify;
+}
 
 .first-section {
   background: url("../images/darker-money.jpg") no-repeat;
   background-size: cover;
-  color: white; }
-  .first-section .home-header {
-    font-size: 18px;
-    height: 45px;
-    line-height: 45px; }
-    .first-section .home-header a {
-      color: white; }
-    .first-section .home-header a:hover {
-      color: #f27b35; }
-    .first-section .home-header .anchor-icon {
-      margin: 0 5px; }
-  .first-section .logo-img {
-    max-height: 30px;
-    height: 100%;
-    margin-right: 5px; }
-  .first-section .mission-container .logo-big-homepage {
-    height: 240px;
-    width: 240px; }
-  .first-section .mission-container .homepage-welcome-header {
-    font-size: 160px;
-    line-height: 200px; }
-  .first-section .mission-container .mission {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: transparent; }
-  .first-section .mission-container .join-us {
-    font-weight: 400; }
+  color: white;
+}
+.first-section .home-header {
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+}
+.first-section .home-header a {
+  color: white;
+}
+.first-section .home-header a:hover {
+  color: #f27b35;
+}
+.first-section .home-header .anchor-icon {
+  margin: 0 5px;
+}
+.first-section .logo-img {
+  max-height: 30px;
+  height: 100%;
+  margin-right: 5px;
+}
+.first-section .mission-container .logo-big-homepage {
+  height: 240px;
+  width: 240px;
+}
+.first-section .mission-container .homepage-welcome-header {
+  font-size: 160px;
+  line-height: 200px;
+}
+.first-section .mission-container .mission {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+}
+.first-section .mission-container .join-us {
+  font-weight: 400;
+}
 
 .main-section {
   background-color: #272727;
-  color: white; }
+  color: white;
+}
 
 .contact-section {
   background: url("../images/d17.jpg") no-repeat;
-  background-size: cover; }
-  .contact-section .contact-row, .contact-section .contact-title, .contact-section .like-finance-title, .contact-section .contact-prompt {
-    text-align: center; }
-  .contact-section .like-finance-title {
-    margin-bottom: 20px; }
+  background-size: cover;
+}
+.contact-section .contact-row,
+.contact-section .contact-title,
+.contact-section .like-finance-title,
+.contact-section .contact-prompt {
+  text-align: center;
+}
+.contact-section .like-finance-title {
+  margin-bottom: 20px;
+}
 
 .logo-big {
   max-height: 100%;
-  max-width: 60%; }
+  max-width: 60%;
+}
 
 .subsection {
-  text-align: center; }
+  text-align: center;
+}
 
 .subsection:nth-child(odd) {
   background-color: #f27b35;
-  color: white; }
+  color: white;
+}
 
 .subsection:nth-child(even) {
   background-color: white;
-  color: #f27b35; }
+  color: #f27b35;
+}
 
 .video {
   min-width: 100%;
   min-height: 100%;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .video-wrapper {
-  height: 320px; }
+  height: 320px;
+}
 
 .data-vertical-line {
   margin-left: 20px;
   height: 30px;
-  border-left: 1px solid white; }
+  border-left: 1px solid white;
+}
 
-.not-active, .not-active .data-circle {
-  border-style: dotted !important; }
-  .not-active a, .not-active .data-circle a {
-    padding: 0; }
+.not-active,
+.not-active .data-circle {
+  border-style: dotted !important;
+}
+.not-active a,
+.not-active .data-circle a {
+  padding: 0;
+}
 
 .subsections-tree-node .data-circle {
   display: inline-block;
@@ -199,4 +265,5 @@ a:hover {
   text-align: center;
   line-height: 36px;
   font-size: 0.8em;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
