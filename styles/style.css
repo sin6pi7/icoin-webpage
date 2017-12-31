@@ -1,5 +1,6 @@
 .center-auto {
   margin: 50px auto;
+  padding: 30px 50px;
 }
 
 .vertical-center {
@@ -75,7 +76,7 @@
 
 .sidenav-icons {
   position: fixed;
-  top: 60px;
+  top: 100px;
   right: 0px;
   z-index: 2;
   width: 35px;
@@ -141,6 +142,9 @@ a:hover {
 .section {
   position: relative;
   min-height: 100%;
+  background: transparent;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
 }
 .section .section-title {
   margin-bottom: 0.8em;
@@ -153,8 +157,6 @@ a:hover {
 }
 
 .first-section {
-  background: url("../images/darker-money.jpg") no-repeat;
-  background-size: cover;
   color: white;
 }
 .first-section .home-header {
@@ -193,15 +195,11 @@ a:hover {
   font-weight: 400;
 }
 
-.main-section {
+.main-section .center-auto {
   background-color: #272727;
   color: white;
 }
 
-.contact-section {
-  background: url("../images/d17.jpg") no-repeat;
-  background-size: cover;
-}
 .contact-section .contact-row,
 .contact-section .contact-title,
 .contact-section .like-finance-title,
@@ -221,12 +219,14 @@ a:hover {
   text-align: center;
 }
 
-.subsection:nth-child(odd) {
+#financial-abc-subsection1 .center-auto,
+#financial-abc-subsection3 .center-auto,
+#experts-subsection1 .center-auto {
   background-color: #f27b35;
   color: white;
 }
 
-.subsection:nth-child(even) {
+#financial-abc-subsection2 .center-auto {
   background-color: white;
   color: #f27b35;
 }

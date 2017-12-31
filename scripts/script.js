@@ -47,6 +47,7 @@ $(window).load(function init() {
         .done(function(html) {
           loaded.push(section.path);
           $container.html(html);
+          $container.parallax({ imageSrc: section.backgroundPath });
           var $centerAuto = $container.find(".center-auto");
           var parentHeight = $centerAuto.parent().height();
           var top = (parentHeight - $centerAuto.outerHeight(true)) / 2;
@@ -90,39 +91,48 @@ $(window).load(function init() {
   setUpSectionsLoader([
     {
       containerSelector: "#home",
-      path: "/sections/home.html"
+      path: "/sections/home.html",
+      backgroundPath: "images/darker-money.jpg"
     },
     {
       containerSelector: "#financial-abc",
-      path: "/sections/financial-abc.html"
+      path: "/sections/financial-abc.html",
+      backgroundPath: "images/krakow.jpg"
     },
     {
       containerSelector: "#financial-abc-subsection1",
-      path: "/sections/financial-abc-subsection1.html"
+      path: "/sections/financial-abc-subsection1.html",
+      backgroundPath: "images/tatry.jpg"
     },
     {
       containerSelector: "#financial-abc-subsection2",
-      path: "/sections/financial-abc-subsection2.html"
+      path: "/sections/financial-abc-subsection2.html",
+      backgroundPath: "images/new-york.jpg"
     },
     {
       containerSelector: "#financial-abc-subsection3",
-      path: "/sections/financial-abc-subsection3.html"
+      path: "/sections/financial-abc-subsection3.html",
+      backgroundPath: "images/dubai.jpg"
     },
     {
       containerSelector: "#experts",
-      path: "/sections/experts.html"
+      path: "/sections/experts.html",
+      backgroundPath: "images/coffee-shop.jpg"
     },
     {
       containerSelector: "#experts-subsection1",
-      path: "/sections/experts-subsection1.html"
+      path: "/sections/experts-subsection1.html",
+      backgroundPath: "images/restaurant.jpg"
     },
     {
       containerSelector: "#cofounder",
-      path: "/sections/cofounder.html"
+      path: "/sections/cofounder.html",
+      backgroundPath: "images/money.jpg"
     },
     {
       containerSelector: "#contact",
-      path: "/sections/contact.html"
+      path: "/sections/contact.html",
+      backgroundPath: "images/d17.jpg"
     }
   ]);
   setUpAnchors();
