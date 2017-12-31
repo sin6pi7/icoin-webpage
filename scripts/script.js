@@ -9,6 +9,7 @@ $(window).load(function init() {
           .attr("href");
       e.preventDefault();
       $(href).scrollTo();
+      history.pushState({}, href, href);
     });
   }
   function setUpNavbarAffix() {
