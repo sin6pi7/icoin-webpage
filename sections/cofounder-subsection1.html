@@ -1,0 +1,145 @@
+<div class="container center-auto">
+    <h1 class="section-title">Galeria</h1>
+
+    <div class="row">
+      <div class="gallery col-md-12">
+        <ul class="gallery-images clearfix">
+          <li class="images-item col-xs-12 col-sm-6 col-md-4" data-src="images/agh.jpg">
+            <div class="images-item-inner">
+              <span class="image-holder" style="background-image: url('images/agh.jpg')"></span>
+            </div>
+          </li>
+          <li class="images-item col-xs-12 col-sm-6 col-md-4" data-src="images/d17-bright.jpg">
+            <div class="images-item-inner">
+              <span class="image-holder" style="background-image: url('images/d17-bright.jpg')"></span>
+            </div>
+          </li>
+          <li class="images-item col-xs-12 col-sm-6 col-md-4" data-src="images/sala.jpg">
+            <div class="images-item-inner">
+              <span class="image-holder" style="background-image: url('images/sala.jpg')"></span>
+            </div>
+          </li>
+          <li class="images-item col-xs-12 col-sm-6 col-md-4" data-src="images/d17.jpg">
+            <div class="images-item-inner">
+              <span class="image-holder" style="background-image: url('images/d17.jpg')"></span>
+            </div>
+          </li>
+          <li class="images-item col-xs-12 col-sm-6 col-md-4" data-src="images/krakow.jpg">
+            <div class="images-item-inner">
+              <span class="image-holder" style="background-image: url('images/krakow.jpg')"></span>
+            </div>
+          </li>
+          <li class="images-item col-xs-12 col-sm-6 col-md-4" data-src="images/new-york.jpg">
+            <div class="images-item-inner">
+              <span class="image-holder" style="background-image: url('images/new-york.jpg')"></span>
+            </div>
+          </li>
+        </ul>
+        <div class="gallery-slider hidden">
+          <button class="slider-close">×</button>
+          <ul class="slider-tiles">
+            <li class="tiles-item prev"></li>
+            <li class="tiles-item current"></li>
+            <li class="tiles-item next"></li>
+          </ul>
+          <div class="slider-nav">
+            <button class="nav-prev">❬</button>
+            <button class="nav-next">❭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script>
+var index;
+$(".images-item").on("click", function() {
+  $(".gallery-slider").removeClass("hidden");
+  $(".gallery-slider .tiles-item.current").html(
+    '<img src="' + $(this).attr("data-src") + '" />'
+  );
+  index = $(this).index();
+  if (index === 0) {
+    $(".nav-prev").addClass("hidden");
+  } else if (index === $(".images-item").length - 1) {
+    $(".nav-next").addClass("hidden");
+  }
+});
+$(".slider-close").on("click", function() {
+  $(".gallery-slider").addClass("hidden");
+  $(".nav-prev, .nav-next").removeClass("hidden");
+});
+$(".nav-prev").on("click", function() {
+  if (index === 1) {
+    $(this).addClass("hidden");
+  } else if (index === $(".images-item").length - 1) {
+    $(".nav-next").removeClass("hidden");
+  }
+  $(".gallery-slider .tiles-item.current").html(
+    '<img src="' + $($(".images-item").get(--index)).attr("data-src") + '" />'
+  );
+});
+$(".nav-next").on("click", function() {
+  if (index === $(".images-item").length - 2) {
+    $(this).addClass("hidden");
+  } else if (index === 0) {
+    $(".nav-prev").removeClass("hidden");
+  }
+  $(".gallery-slider .tiles-item.current").html(
+    '<img src="' + $($(".images-item").get(++index)).attr("data-src") + '" />'
+  );
+});
+</script>
+<!-- <script>
+var loaded = [];
+var $imagesItems = $(".images-item");
+var currentIdx = 0;
+
+$(".nav-prev").on("click", function() {
+  if (currentIdx === 1) {
+    $(this).addClass("hidden");
+  } else if (currentIdx === $imagesItems.length - 1) {
+    $(".nav-next").removeClass("hidden");
+  }
+  $(".images-item.next").removeClass("next");
+  $(".images-item.current")
+    .removeClass("current")
+    .addClass("next");
+  if (!loaded[currentIdx - 1]) {
+    $(".images-item.prev").html(
+      '<img src="' + $(".images-item.prev").attr("data-src") + '" />'
+    );
+    loaded[currentIdx - 1] = true;
+  }
+  $(".images-item.prev")
+    .removeClass("prev")
+    .addClass("current");
+  $(".images-item.current")
+    .prev()
+    .addClass("prev");
+  currentIdx--;
+});
+$(".nav-next").on("click", function() {
+  if (currentIdx === $imagesItems.length - 2) {
+    $(this).addClass("hidden");
+  } else if (currentIdx === 0) {
+    $(".nav-prev").removeClass("hidden");
+  }
+  $(".images-item.prev").removeClass("prev");
+  $(".images-item.current")
+    .removeClass("current")
+    .addClass("prev");
+  if (!loaded[currentIdx + 1]) {
+    $(".images-item.next").html(
+      '<img src="' + $(".images-item.next").attr("data-src") + '" />'
+    );
+    loaded[currentIdx + 1] = true;
+  }
+  $(".images-item.next")
+    .removeClass("next")
+    .addClass("current");
+  $(".images-item.current")
+    .next()
+    .addClass("next");
+  currentIdx++;
+});
+</script> -->

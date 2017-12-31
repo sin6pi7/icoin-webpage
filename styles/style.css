@@ -221,7 +221,8 @@ a:hover {
 
 #financial-abc-subsection1 .center-auto,
 #financial-abc-subsection3 .center-auto,
-#experts-subsection1 .center-auto {
+#experts-subsection1 .center-auto,
+#cofounder-subsection1 .center-auto {
   background-color: #f27b35;
   color: white;
 }
@@ -267,3 +268,116 @@ a:hover {
   font-size: 0.8em;
   margin-right: 5px;
 }
+
+.gallery-images {
+  padding-bottom: 20px;
+}
+.images-item {
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 56.25%;
+}
+.images-item:hover {
+  cursor: zoom-in;
+}
+.images-item:hover .image-holder {
+  transform: scale(1.2);
+}
+.images-item-inner {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
+  overflow: hidden;
+  background-color: white;
+}
+.image-holder {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s;
+}
+.hidden {
+  display: none;
+}
+.gallery-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+.tiles-item {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  right: 60px;
+  padding-bottom: 60px;
+}
+.tiles-item img {
+  width: 100%;
+}
+@media (min-width: 819px) {
+  .images-item {
+    padding-bottom: 28.125%;
+  }
+}
+@media (min-width: 1282px) {
+  .images-item {
+    padding-bottom: 18.75%;
+  }
+}
+.slider-close,
+.nav-prev,
+.nav-next {
+  border: 0;
+  background: none;
+  color: black;
+  font-weight: 300;
+}
+.slider-close {
+  position: fixed;
+  right: 30px;
+  font-size: 50px;
+}
+.nav-prev {
+  position: fixed;
+  left: 20px;
+  top: 50vh;
+  font-size: 30px;
+  padding: 0;
+}
+.nav-next {
+  position: fixed;
+  right: 30px;
+  top: 50vh;
+  font-size: 30px;
+  padding: 0;
+}
+
+/*.gallery-images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.images-item {
+  display: none;
+  background-color: white;
+  color: black;
+}
+.hidden {
+  display: none;
+}
+.current {
+  display: block;
+}*/

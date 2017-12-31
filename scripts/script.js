@@ -48,7 +48,9 @@ $(window).load(function init() {
         .done(function(html) {
           loaded.push(section.path);
           $container.html(html);
-          $container.parallax({ imageSrc: section.backgroundPath });
+          if (section.backgroundPath) {
+            $container.parallax({ imageSrc: section.backgroundPath });
+          }
           var $centerAuto = $container.find(".center-auto");
           var parentHeight = $centerAuto.parent().height();
           var top = (parentHeight - $centerAuto.outerHeight(true)) / 2;
@@ -129,6 +131,10 @@ $(window).load(function init() {
       containerSelector: "#cofounder",
       path: "/sections/cofounder.html",
       backgroundPath: "images/money.jpg"
+    },
+    {
+      containerSelector: "#cofounder-subsection1",
+      path: "/sections/cofounder-subsection1.html"
     },
     {
       containerSelector: "#contact",
