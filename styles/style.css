@@ -314,13 +314,27 @@ a:hover {
   background-color: white;
   z-index: 1000;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .tiles-item {
+  display: none;
   position: absolute;
   top: 80px;
   left: 60px;
   right: 60px;
   padding-bottom: 60px;
+  transition: all 0.8s;
+}
+.tiles-item.prev,
+.tiles-item.current,
+.tiles-item.next {
+  display: block;
+}
+.tiles-item.prev {
+  transform: translateX(-150%);
+}
+.tiles-item.next {
+  transform: translateX(150%);
 }
 .tiles-item img {
   width: 100%;
@@ -362,22 +376,7 @@ a:hover {
   font-size: 30px;
   padding: 0;
 }
+.ui-loader {
+  display: none !important;
+}
 
-/*.gallery-images {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.images-item {
-  display: none;
-  background-color: white;
-  color: black;
-}
-.hidden {
-  display: none;
-}
-.current {
-  display: block;
-}*/

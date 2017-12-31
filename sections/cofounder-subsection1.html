@@ -38,9 +38,12 @@
         <div class="gallery-slider hidden">
           <button class="slider-close">×</button>
           <ul class="slider-tiles">
-            <li class="tiles-item prev"></li>
-            <li class="tiles-item current"></li>
-            <li class="tiles-item next"></li>
+            <li class="tiles-item"><img src="images/agh.jpg"></li>
+            <li class="tiles-item"><img src="images/d17-bright.jpg"></li>
+            <li class="tiles-item"><img src="images/sala.jpg"></li>
+            <li class="tiles-item"><img src="images/d17.jpg"></li>
+            <li class="tiles-item"><img src="images/krakow.jpg"></li>
+            <li class="tiles-item"><img src="images/new-york.jpg"></li>
           </ul>
           <div class="slider-nav">
             <button class="nav-prev">❬</button>
@@ -51,95 +54,77 @@
     </div>
 </div>
 <script>
+function showPrev() {
+  if (index === 0) {
+    return;
+  }
+  $(".tiles-item.next").removeClass("next");
+  $(".current")
+    .removeClass("current")
+    .addClass("next");
+  $(".prev")
+    .removeClass("prev")
+    .addClass("current");
+  if (index === 1) {
+    $(".nav-prev").addClass("hidden");
+  } else if (index === $(".images-item").length - 1) {
+    $(".nav-next").removeClass("hidden");
+  }
+  if (index > 1) {
+    $($(".tiles-item").get(index - 2)).addClass("prev");
+  }
+  index--;
+}
+function showNext() {
+  if (index === $(".images-item").length - 1) {
+    return;
+  }
+  $(".tiles-item.prev").removeClass("prev");
+  $(".current")
+    .removeClass("current")
+    .addClass("prev");
+  $(".next")
+    .removeClass("next")
+    .addClass("current");
+  if (index === $(".images-item").length - 2) {
+    $(".nav-next").addClass("hidden");
+  } else if (index === 0) {
+    $(".nav-prev").removeClass("hidden");
+  }
+  if (index < $(".images-item").length - 2) {
+    $($(".tiles-item").get(index + 2)).addClass("next");
+  }
+  index++;
+}
 var index;
 $(".images-item").on("click", function() {
   $(".gallery-slider").removeClass("hidden");
-  $(".gallery-slider .tiles-item.current").html(
-    '<img src="' + $(this).attr("data-src") + '" />'
-  );
   index = $(this).index();
+  $($(".tiles-item").get(index)).addClass("current");
   if (index === 0) {
     $(".nav-prev").addClass("hidden");
+    $($(".tiles-item").get(index + 1)).addClass("next");
   } else if (index === $(".images-item").length - 1) {
     $(".nav-next").addClass("hidden");
+    $($(".tiles-item").get(index - 1)).addClass("prev");
+  } else {
+    $($(".tiles-item").get(index + 1)).addClass("next");
+    $($(".tiles-item").get(index - 1)).addClass("prev");
   }
+  $(".nav-prev").on("click", showPrev);
+  $(".nav-next").on("click", showNext);
+  $(window).on("swipeleft", showNext);
+  $(window).on("swiperight", showPrev);
 });
 $(".slider-close").on("click", function() {
   $(".gallery-slider").addClass("hidden");
   $(".nav-prev, .nav-next").removeClass("hidden");
-});
-$(".nav-prev").on("click", function() {
-  if (index === 1) {
-    $(this).addClass("hidden");
-  } else if (index === $(".images-item").length - 1) {
-    $(".nav-next").removeClass("hidden");
-  }
-  $(".gallery-slider .tiles-item.current").html(
-    '<img src="' + $($(".images-item").get(--index)).attr("data-src") + '" />'
-  );
-});
-$(".nav-next").on("click", function() {
-  if (index === $(".images-item").length - 2) {
-    $(this).addClass("hidden");
-  } else if (index === 0) {
-    $(".nav-prev").removeClass("hidden");
-  }
-  $(".gallery-slider .tiles-item.current").html(
-    '<img src="' + $($(".images-item").get(++index)).attr("data-src") + '" />'
-  );
+  $(".tiles-item.current").removeClass("current");
+  $(".tiles-item.prev").removeClass("prev");
+  $(".tiles-item.next").removeClass("next");
+  $(".nav-prev").off("click", showPrev);
+  $(".nav-next").off("click", showNext);
+  $(window).off("swipeleft", showNext);
+  $(window).off("swiperight", showPrev);
 });
 </script>
-<!-- <script>
-var loaded = [];
-var $imagesItems = $(".images-item");
-var currentIdx = 0;
-
-$(".nav-prev").on("click", function() {
-  if (currentIdx === 1) {
-    $(this).addClass("hidden");
-  } else if (currentIdx === $imagesItems.length - 1) {
-    $(".nav-next").removeClass("hidden");
-  }
-  $(".images-item.next").removeClass("next");
-  $(".images-item.current")
-    .removeClass("current")
-    .addClass("next");
-  if (!loaded[currentIdx - 1]) {
-    $(".images-item.prev").html(
-      '<img src="' + $(".images-item.prev").attr("data-src") + '" />'
-    );
-    loaded[currentIdx - 1] = true;
-  }
-  $(".images-item.prev")
-    .removeClass("prev")
-    .addClass("current");
-  $(".images-item.current")
-    .prev()
-    .addClass("prev");
-  currentIdx--;
-});
-$(".nav-next").on("click", function() {
-  if (currentIdx === $imagesItems.length - 2) {
-    $(this).addClass("hidden");
-  } else if (currentIdx === 0) {
-    $(".nav-prev").removeClass("hidden");
-  }
-  $(".images-item.prev").removeClass("prev");
-  $(".images-item.current")
-    .removeClass("current")
-    .addClass("prev");
-  if (!loaded[currentIdx + 1]) {
-    $(".images-item.next").html(
-      '<img src="' + $(".images-item.next").attr("data-src") + '" />'
-    );
-    loaded[currentIdx + 1] = true;
-  }
-  $(".images-item.next")
-    .removeClass("next")
-    .addClass("current");
-  $(".images-item.current")
-    .next()
-    .addClass("next");
-  currentIdx++;
-});
-</script> -->
